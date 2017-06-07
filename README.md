@@ -5,7 +5,7 @@ Abstractions for Assembly, Console, File, FileInfo and other static classes or s
 
 - All abstractions are interfaces as we don't expect abstractions to have any behavior (not even the fancy implicit cast). 
 We don't want the abstractions to be secretely casted to another "not-so-abstract" type under the hood.
-- We use a convenient extension method Wrap() to wrap all classes instances intended to be wrapped.
+- We use a convenient extension method Adap() to adap all classes instances intended to be adapted to the mockable interface. See [Design Pattern Adapter](https://en.wikipedia.org/wiki/Adapter_pattern)
 - Abstractions are in the separate library. Implementations are in another.
 - If abstractions are interfaces, they don't need to be tested.
 - We don't provide any kind of test tools. Use a mock library instead.
@@ -16,10 +16,9 @@ ie:	`[CompanyName].[ProductName].[Something_That_Follow_The_Other_Rules]`
 - Abstractions and implementations are .NET Standard Libraries.
 - Documentation of framework is copied as it is important for developpers who use intellisense to still have a clear view
 on what the framework will do for each calls, especially in case of Exception, and parameter expectations.
-- Everything is public. 
+- Everything is public so everything is testable. 
 - There is no god class FileSystem :). Each interface is named and surfaced with the related underlying framework class : IFile for File,
-IFileInfo for FileInfo, etc... You can use Build method or IFileInfoFactory and IDirectoryInfoFactory to build related abstractions above
-files and directory.
+IFileInfo for FileInfo, etc... You can use Build method or IFileInfoFactory and IDirectoryInfoFactory to build related abstractions above files and directory.
 
 ## Usage 
 
@@ -53,7 +52,7 @@ With the following code:
 
 And the test class :
 
-	public class UsageTest
+    public class UsageTest
     {
         [Fact]
         public void Check_Init_When_File_Doesnt_Exist()
@@ -68,6 +67,8 @@ And the test class :
             Assert.Equal("fooBar", myClass.Init("myFile"));
         }
     }
+
+Note: The best is to avoid reference the implementations outside of the main program (which does the IOC resolution of interfaces to classes).
 
 ## Credits
 
