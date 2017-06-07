@@ -12,7 +12,7 @@ We don't want the abstractions to be secretely casted to another "not-so-abstrac
 - We use a library name because it's not part of the framework and we don't want any namespace conflicts.
 Furthermore we followed the namespace policy : https://msdn.microsoft.com/en-us/library/ms229026(v=vs.110).aspx
 ie:	`[CompanyName].[ProductName].[Something_That_Follow_The_Other_Rules]`
-- Implementations are generated through [Resharper|https://www.jetbrains.com/resharper/] delegating members function.
+- Implementations are generated through [Resharper](https://www.jetbrains.com/resharper/) delegating members function.
 - Abstractions and implementations are .NET Standard Libraries.
 - Documentation of framework is copied as it is important for developpers who use intellisense to still have a clear view
 on what the framework will do for each calls, especially in case of Exception, and parameter expectations.
