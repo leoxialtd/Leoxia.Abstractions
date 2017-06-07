@@ -2,15 +2,16 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <Company>Leoxia Ltd</Company>
-    <Description>Abstractions for System.IO</Description>
-    <Authors>Leoxia</Authors>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.90.0</Version>
-    <PackageReleaseNotes>Provides:
+    <Description>Abstractions for System.IO
+Provides:
     IAssembly
     IEnvironment
     IShallowCloneable
-    ITimeProvider</PackageReleaseNotes>
+    ITimeProvider</Description>
+    <Authors>Leoxia</Authors>
+    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
+    <Version>1.1.90.0</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard1.4\.xml</DocumentationFile>
