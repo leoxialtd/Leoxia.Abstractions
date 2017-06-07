@@ -1,8 +1,8 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// The MIT License
+// MIT License
 // 
-// Copyright © 2011 - 2017 Leoxia Ltd, https://www.leoxia.com
+// Copyright (c) 2017 Leoxia Ltd
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -11,29 +11,32 @@
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 // 
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
 // 
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
 #endregion
 
+#region Usings
+
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Leoxia.Abstractions.IO;
 
+#endregion
+
 namespace Leoxia.Implementations.IO
 {
     /// <summary>
-    /// Adapter for System.Console to IConsole 
+    ///     Adapter for System.Console to IConsole
     /// </summary>
     /// <seealso cref="Leoxia.Abstractions.IO.IConsole" />
     /// <seealso cref="Leoxia.Abstractions.IO.INotClsConsole" />
@@ -58,100 +61,94 @@ namespace Leoxia.Implementations.IO
         /// </PermissionSet>
         public ConsoleColor BackgroundColor
         {
-            get { return Console.BackgroundColor; }
-            set { Console.BackgroundColor = value; }
+            get => Console.BackgroundColor;
+            set => Console.BackgroundColor = value;
         }
 
         /// <summary>
-        /// Gets or sets the height of the buffer.
+        ///     Gets or sets the height of the buffer.
         /// </summary>
         /// <value>
-        /// The height of the buffer.
+        ///     The height of the buffer.
         /// </value>
         public int BufferHeight
         {
-            get { return Console.BufferHeight; }
-            set { Console.BufferHeight = value; }
+            get => Console.BufferHeight;
+            set => Console.BufferHeight = value;
         }
 
         /// <summary>
-        /// Gets or sets the width of the buffer.
+        ///     Gets or sets the width of the buffer.
         /// </summary>
         /// <value>
-        /// The width of the buffer.
+        ///     The width of the buffer.
         /// </value>
         public int BufferWidth
         {
-            get { return Console.BufferWidth; }
-            set { Console.BufferWidth = value; }
+            get => Console.BufferWidth;
+            set => Console.BufferWidth = value;
         }
 
         /// <summary>
-        /// Gets a value indicating whether [caps lock].
+        ///     Gets a value indicating whether [caps lock].
         /// </summary>
         /// <value>
-        /// <c>true</c> if [caps lock]; otherwise, <c>false</c>.
+        ///     <c>true</c> if [caps lock]; otherwise, <c>false</c>.
         /// </value>
-        public bool CapsLock
-        {
-            get { return Console.CapsLock; }
-        }
+        public bool CapsLock => Console.CapsLock;
 
         /// <summary>
-        /// Gets or sets the cursor left.
+        ///     Gets or sets the cursor left.
         /// </summary>
         /// <value>
-        /// The cursor left.
+        ///     The cursor left.
         /// </value>
         public int CursorLeft
         {
-            get { return Console.CursorLeft; }
-            set { Console.CursorLeft = value; }
+            get => Console.CursorLeft;
+            set => Console.CursorLeft = value;
         }
 
         /// <summary>
-        /// Gets or sets the size of the cursor.
+        ///     Gets or sets the size of the cursor.
         /// </summary>
         /// <value>
-        /// The size of the cursor.
+        ///     The size of the cursor.
         /// </value>
         public int CursorSize
         {
-            get { return Console.CursorSize; }
-            set { Console.CursorSize = value; }
+            get => Console.CursorSize;
+            set => Console.CursorSize = value;
         }
 
         /// <summary>
-        /// Gets or sets the cursor top.
+        ///     Gets or sets the cursor top.
         /// </summary>
         /// <value>
-        /// The cursor top.
+        ///     The cursor top.
         /// </value>
         public int CursorTop
         {
-            get { return Console.CursorTop; }
-            set { Console.CursorTop = value; }
+            get => Console.CursorTop;
+            set => Console.CursorTop = value;
         }
 
         /// <summary>
-        /// Gets or sets a value indicating whether [cursor visible].
+        ///     Gets or sets a value indicating whether [cursor visible].
         /// </summary>
         /// <value>
-        /// <c>true</c> if [cursor visible]; otherwise, <c>false</c>.
+        ///     <c>true</c> if [cursor visible]; otherwise, <c>false</c>.
         /// </value>
         public bool CursorVisible
         {
-            get { return Console.CursorVisible; }
-            set { Console.CursorVisible = value; }
+            get => Console.CursorVisible;
+            set => Console.CursorVisible = value;
         }
 
         /// <summary>Gets the standard error output stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextWriter" /> that represents the standard error output stream.</returns>
         /// <filterpriority>1</filterpriority>
-        public ITextWriter Error
-        {
-            get { return new TextWriterAdapter(Console.Error); }
-        }
+        public ITextWriter Error => new TextWriterAdapter(Console.Error);
 
         /// <summary>Gets or sets the foreground color of the console.</summary>
         /// <returns>
@@ -172,210 +169,185 @@ namespace Leoxia.Implementations.IO
         /// </PermissionSet>
         public ConsoleColor ForegroundColor
         {
-            get { return Console.ForegroundColor; }
-            set { Console.ForegroundColor = value; }
+            get => Console.ForegroundColor;
+            set => Console.ForegroundColor = value;
         }
 
         /// <summary>
-        /// Gets or sets the input encoding.
+        ///     Gets or sets the input encoding.
         /// </summary>
         /// <value>
-        /// The input encoding.
+        ///     The input encoding.
         /// </value>
         public Encoding InputEncoding
         {
-            get { return Console.InputEncoding; }
-            set { Console.InputEncoding = value; }
+            get => Console.InputEncoding;
+            set => Console.InputEncoding = value;
         }
 
         /// <summary>
-        /// Gets a value indicating whether this instance is error redirected.
+        ///     Gets a value indicating whether this instance is error redirected.
         /// </summary>
         /// <value>
-        /// <c>true</c> if this instance is error redirected; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is error redirected; otherwise, <c>false</c>.
         /// </value>
-        public bool IsErrorRedirected
-        {
-            get { return Console.IsErrorRedirected; }
-        }
+        public bool IsErrorRedirected => Console.IsErrorRedirected;
 
         /// <summary>
-        /// Gets a value indicating whether this instance is input redirected.
+        ///     Gets a value indicating whether this instance is input redirected.
         /// </summary>
         /// <value>
-        /// <c>true</c> if this instance is input redirected; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is input redirected; otherwise, <c>false</c>.
         /// </value>
-        public bool IsInputRedirected
-        {
-            get { return Console.IsInputRedirected; }
-        }
+        public bool IsInputRedirected => Console.IsInputRedirected;
 
         /// <summary>
-        /// Gets a value indicating whether this instance is output redirected.
+        ///     Gets a value indicating whether this instance is output redirected.
         /// </summary>
         /// <value>
-        /// <c>true</c> if this instance is output redirected; otherwise, <c>false</c>.
+        ///     <c>true</c> if this instance is output redirected; otherwise, <c>false</c>.
         /// </value>
-        public bool IsOutputRedirected
-        {
-            get { return Console.IsOutputRedirected; }
-        }
+        public bool IsOutputRedirected => Console.IsOutputRedirected;
 
         /// <summary>Gets the standard input stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextReader" /> that represents the standard input stream.</returns>
         /// <filterpriority>1</filterpriority>
-        public ITextReader In
-        {
-            get { return new TextReaderAdapter(Console.In); }
-        }
+        public ITextReader In => new TextReaderAdapter(Console.In);
 
         /// <summary>
-        /// Gets a value indicating whether [key available].
+        ///     Gets a value indicating whether [key available].
         /// </summary>
         /// <value>
-        /// <c>true</c> if [key available]; otherwise, <c>false</c>.
+        ///     <c>true</c> if [key available]; otherwise, <c>false</c>.
         /// </value>
-        public bool KeyAvailable
-        {
-            get { return Console.KeyAvailable; }
-        }
+        public bool KeyAvailable => Console.KeyAvailable;
 
         /// <summary>
-        /// Gets the width of the largest window.
+        ///     Gets the width of the largest window.
         /// </summary>
         /// <value>
-        /// The width of the largest window.
+        ///     The width of the largest window.
         /// </value>
-        public int LargestWindowWidth
-        {
-            get { return Console.LargestWindowWidth; }
-        }
+        public int LargestWindowWidth => Console.LargestWindowWidth;
 
         /// <summary>
-        /// Gets the height of the largest window.
+        ///     Gets the height of the largest window.
         /// </summary>
         /// <value>
-        /// The height of the largest window.
+        ///     The height of the largest window.
         /// </value>
-        public int LargestWindowHeight
-        {
-            get { return Console.LargestWindowHeight; }
-        }
+        public int LargestWindowHeight => Console.LargestWindowHeight;
 
         /// <summary>
-        /// Gets a value indicating whether [number lock].
+        ///     Gets a value indicating whether [number lock].
         /// </summary>
         /// <value>
-        /// <c>true</c> if [number lock]; otherwise, <c>false</c>.
+        ///     <c>true</c> if [number lock]; otherwise, <c>false</c>.
         /// </value>
-        public bool NumberLock
-        {
-            get { return Console.NumberLock; }
-        }
+        public bool NumberLock => Console.NumberLock;
 
         /// <summary>Gets the standard output stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextWriter" /> that represents the standard output stream.</returns>
         /// <filterpriority>1</filterpriority>
-        public ITextWriter Out
-        {
-            get { return new TextWriterAdapter(Console.Out); }
-        }
+        public ITextWriter Out => new TextWriterAdapter(Console.Out);
 
         /// <summary>
-        /// Gets or sets the output encoding.
+        ///     Gets or sets the output encoding.
         /// </summary>
         /// <value>
-        /// The output encoding.
+        ///     The output encoding.
         /// </value>
         public Encoding OutputEncoding
         {
-            get { return Console.OutputEncoding; }
-            set { Console.OutputEncoding = value; }
+            get => Console.OutputEncoding;
+            set => Console.OutputEncoding = value;
         }
 
         /// <summary>
-        /// Gets or sets the title.
+        ///     Gets or sets the title.
         /// </summary>
         /// <value>
-        /// The title.
+        ///     The title.
         /// </value>
         public string Title
         {
-            get { return Console.Title; }
-            set { Console.Title = value; }
+            get => Console.Title;
+            set => Console.Title = value;
         }
 
         /// <summary>
-        /// Gets or sets a value indicating whether [treat control c as input].
+        ///     Gets or sets a value indicating whether [treat control c as input].
         /// </summary>
         /// <value>
-        /// <c>true</c> if [treat control c as input]; otherwise, <c>false</c>.
+        ///     <c>true</c> if [treat control c as input]; otherwise, <c>false</c>.
         /// </value>
         public bool TreatControlCAsInput
         {
-            get { return Console.TreatControlCAsInput; }
-            set { Console.TreatControlCAsInput = value; }
+            get => Console.TreatControlCAsInput;
+            set => Console.TreatControlCAsInput = value;
         }
 
         /// <summary>
-        /// Gets or sets the height of the window.
+        ///     Gets or sets the height of the window.
         /// </summary>
         /// <value>
-        /// The height of the window.
+        ///     The height of the window.
         /// </value>
         public int WindowHeight
         {
-            get { return Console.WindowHeight; }
-            set { Console.WindowHeight = value; }
+            get => Console.WindowHeight;
+            set => Console.WindowHeight = value;
         }
 
         /// <summary>
-        /// Gets or sets the width of the window.
+        ///     Gets or sets the width of the window.
         /// </summary>
         /// <value>
-        /// The width of the window.
+        ///     The width of the window.
         /// </value>
         public int WindowWidth
         {
-            get { return Console.WindowWidth; }
-            set { Console.WindowWidth = value; }
+            get => Console.WindowWidth;
+            set => Console.WindowWidth = value;
         }
 
         /// <summary>
-        /// Gets or sets the window left.
+        ///     Gets or sets the window left.
         /// </summary>
         /// <value>
-        /// The window left.
+        ///     The window left.
         /// </value>
         public int WindowLeft
         {
-            get { return Console.WindowLeft; }
-            set { Console.WindowLeft = value; }
+            get => Console.WindowLeft;
+            set => Console.WindowLeft = value;
         }
 
         /// <summary>
-        /// Gets or sets the window top.
+        ///     Gets or sets the window top.
         /// </summary>
         /// <value>
-        /// The window top.
+        ///     The window top.
         /// </value>
         public int WindowTop
         {
-            get { return Console.WindowTop; }
-            set { Console.WindowTop = value; }
+            get => Console.WindowTop;
+            set => Console.WindowTop = value;
         }
 
         /// <summary>
-        /// Occurs when the <see cref="F:System.ConsoleModifiers.Control" /> modifier key (Ctrl) and either the <see cref="F:System.ConsoleKey.C" /> console key (C) or the Break key are pressed simultaneously (Ctrl+C or Ctrl+Break).
+        ///     Occurs when the <see cref="F:System.ConsoleModifiers.Control" /> modifier key (Ctrl) and either the
+        ///     <see cref="F:System.ConsoleKey.C" /> console key (C) or the Break key are pressed simultaneously (Ctrl+C or
+        ///     Ctrl+Break).
         /// </summary>
         public event ConsoleCancelEventHandler CancelKeyPress
         {
-            add { Console.CancelKeyPress += value; }
-            remove { Console.CancelKeyPress -= value; }
+            add => Console.CancelKeyPress += value;
+            remove => Console.CancelKeyPress -= value;
         }
 
         /// <summary>
-        /// Beeps this instance.
+        ///     Beeps this instance.
         /// </summary>
         public void Beep()
         {
@@ -383,7 +355,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Beeps the specified frequency.
+        ///     Beeps the specified frequency.
         /// </summary>
         /// <param name="frequency">The frequency.</param>
         /// <param name="duration">The duration.</param>
@@ -393,7 +365,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Clears this instance.
+        ///     Clears this instance.
         /// </summary>
         public void Clear()
         {
@@ -401,7 +373,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Moves the buffer area.
+        ///     Moves the buffer area.
         /// </summary>
         /// <param name="sourceLeft">The source left.</param>
         /// <param name="sourceTop">The source top.</param>
@@ -416,7 +388,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Moves the buffer area.
+        ///     Moves the buffer area.
         /// </summary>
         /// <param name="sourceLeft">The source left.</param>
         /// <param name="sourceTop">The source top.</param>
@@ -472,7 +444,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Reads the key.
+        ///     Reads the key.
         /// </summary>
         /// <returns></returns>
         public ConsoleKeyInfo ReadKey()
@@ -481,7 +453,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Reads the key.
+        ///     Reads the key.
         /// </summary>
         /// <param name="intercept">if set to <c>true</c> [intercept].</param>
         /// <returns></returns>
@@ -522,7 +494,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Sets the size of the buffer.
+        ///     Sets the size of the buffer.
         /// </summary>
         /// <param name="width">The width.</param>
         /// <param name="height">The height.</param>
@@ -532,7 +504,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Sets the cursor position.
+        ///     Sets the cursor position.
         /// </summary>
         /// <param name="left">The left.</param>
         /// <param name="top">The top.</param>
@@ -602,7 +574,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Sets the window position.
+        ///     Sets the window position.
         /// </summary>
         /// <param name="left">The left.</param>
         /// <param name="top">The top.</param>
@@ -612,7 +584,7 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
-        /// Sets the size of the window.
+        ///     Sets the size of the window.
         /// </summary>
         /// <param name="width">The width.</param>
         /// <param name="height">The height.</param>
@@ -810,24 +782,6 @@ namespace Leoxia.Implementations.IO
         public void Write(string format, params object[] arg)
         {
             Console.Write(format, arg);
-        }
-
-        /// <summary>Writes the text representation of the specified 32-bit unsigned integer value to the standard output stream.</summary>
-        /// <param name="value">The value to write. </param>
-        /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
-        /// <filterpriority>1</filterpriority>
-        public void Write(uint value)
-        {
-            Console.Write(value);
-        }
-
-        /// <summary>Writes the text representation of the specified 64-bit unsigned integer value to the standard output stream.</summary>
-        /// <param name="value">The value to write. </param>
-        /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
-        /// <filterpriority>1</filterpriority>
-        public void Write(ulong value)
-        {
-            Console.Write(value);
         }
 
         /// <summary>Writes the current line terminator to the standard output stream.</summary>
@@ -1048,6 +1002,24 @@ namespace Leoxia.Implementations.IO
         public void WriteLine(string format, params object[] arg)
         {
             Console.WriteLine(format, arg);
+        }
+
+        /// <summary>Writes the text representation of the specified 32-bit unsigned integer value to the standard output stream.</summary>
+        /// <param name="value">The value to write. </param>
+        /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
+        /// <filterpriority>1</filterpriority>
+        public void Write(uint value)
+        {
+            Console.Write(value);
+        }
+
+        /// <summary>Writes the text representation of the specified 64-bit unsigned integer value to the standard output stream.</summary>
+        /// <param name="value">The value to write. </param>
+        /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
+        /// <filterpriority>1</filterpriority>
+        public void Write(ulong value)
+        {
+            Console.Write(value);
         }
 
         /// <summary>

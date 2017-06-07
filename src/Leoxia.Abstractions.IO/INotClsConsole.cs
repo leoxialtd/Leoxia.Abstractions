@@ -1,11 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region Copyright (c) 2017 Leoxia Ltd
+
+// MIT License
+// 
+// Copyright (c) 2017 Leoxia Ltd
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+#endregion
+
+#region Usings
+
+using System;
+
+#endregion
 
 namespace Leoxia.Abstractions.IO
 {
     /// <summary>
-    /// The Non Cls compliant of IConsole
+    ///     The Non Cls compliant of IConsole
     /// </summary>
     [CLSCompliant(false)]
     public interface INotClsConsole
@@ -18,7 +46,6 @@ namespace Leoxia.Abstractions.IO
         void Write(uint value);
 
 
-
         /// <summary>Writes the text representation of the specified 64-bit unsigned integer value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
@@ -26,7 +53,10 @@ namespace Leoxia.Abstractions.IO
         [CLSCompliant(false)]
         void Write(ulong value);
 
-        /// <summary>Writes the text representation of the specified 32-bit unsigned integer value, followed by the current line terminator, to the standard output stream.</summary>
+        /// <summary>
+        ///     Writes the text representation of the specified 32-bit unsigned integer value, followed by the current line
+        ///     terminator, to the standard output stream.
+        /// </summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
@@ -34,8 +64,10 @@ namespace Leoxia.Abstractions.IO
         void WriteLine(uint value);
 
 
-
-        /// <summary>Writes the text representation of the specified 64-bit unsigned integer value, followed by the current line terminator, to the standard output stream.</summary>
+        /// <summary>
+        ///     Writes the text representation of the specified 64-bit unsigned integer value, followed by the current line
+        ///     terminator, to the standard output stream.
+        /// </summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
