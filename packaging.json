@@ -1,0 +1,10 @@
+{
+    "RequireLicenseAcceptance" : true,
+    "LicenseUrl" : "https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md",
+    "ProjectUrl" : "https://www.leoxia.com",
+    "IconUrl" : "https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png",
+    "RepositoryUrl" : "https://github.com/leoxialtd/Leoxia.Abstractions",
+    "RepositoryType" : "Git",
+    "Tags" : "testability abstractions mockability leoxia",
+    "ReleaseNotes" : ""
+}

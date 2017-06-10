@@ -2,10 +2,21 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <Company>Leoxia Ltd</Company>
-    <Description>Abstractions for System.IO</Description>
+    <Description>Abstractions for System.IO.FileSystem.Watcher
+Provides:
+  IFileSystemWatcher</Description>
     <Authors>Leoxia</Authors>
-    <Version>1.1.90.0</Version>
+    <Version>1.1.91.0</Version>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/leoxialtd/Leoxia.Abstractions</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>testability abstractions mockability leoxia</PackageTags>
+    <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
+    <PackageReleaseNotes />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>

@@ -2,10 +2,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.5</TargetFramework>
     <Company>Leoxia Ltd</Company>
-    <Description>Abstractions for System.IO</Description>
+    <Description>Implementations for System abstractions classes.
+Provides Implementations for:
+  IAssembly
+  IEnvironment</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.90.0</Version>
+    <Version>1.1.91.0</Version>
+    <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/leoxialtd/Leoxia.Abstractions</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>testability abstractions mockability leoxia</PackageTags>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
+    <PackageReleaseNotes />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard1.5\Leoxia.Implementations.xml</DocumentationFile>
