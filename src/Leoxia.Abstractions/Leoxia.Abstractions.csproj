@@ -10,7 +10,7 @@ Provides:
     ITimeProvider</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.91.0</Version>
+    <Version>1.1.93.0</Version>
     <PackageReleaseNotes>
     </PackageReleaseNotes>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
@@ -21,7 +21,6 @@ Provides:
     <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
     <NeutralLanguage />
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard1.4\.xml</DocumentationFile>

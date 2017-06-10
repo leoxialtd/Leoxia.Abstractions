@@ -18,7 +18,7 @@ Provides:
   ITextWriter</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.91.0</Version>
+    <Version>1.1.93.0</Version>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
@@ -26,7 +26,6 @@ Provides:
     <RepositoryUrl>https://github.com/leoxialtd/Leoxia.Abstractions</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>testability abstractions mockability leoxia</PackageTags>
-    <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
     <PackageReleaseNotes />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
