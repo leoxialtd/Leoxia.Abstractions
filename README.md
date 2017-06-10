@@ -1,6 +1,10 @@
 # Leoxia.Abstractions
 Abstractions for Assembly, Console, File, FileInfo and other static classes or static methods not mockable.
 
+## Packages are available on Nuget.org
+
+[Leoxia.Abstractions Package](https://www.nuget.org/packages/Leoxia.Abstractions/)
+
 ## Specificities
 
 - All abstractions are interfaces as we don't expect abstractions to have any behavior (not even the fancy implicit cast). 
