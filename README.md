@@ -3,16 +3,16 @@ Abstractions for Assembly, Console, File, FileInfo and other static classes or s
 
 ## Packages are available on Nuget.org
 
-[Leoxia.Abstractions](https://www.nuget.org/packages/Leoxia.Abstractions/)
-[Leoxia.Abstractions.IO](https://www.nuget.org/packages/Leoxia.Abstractions.IO/)
-[Leoxia.Abstractions.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.DriveInfo/)
-[Leoxia.Abstractions.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.Watcher/)
+[Leoxia.Abstractions](https://www.nuget.org/packages/Leoxia.Abstractions/)<br/>
+[Leoxia.Abstractions.IO](https://www.nuget.org/packages/Leoxia.Abstractions.IO/)<br/>
+[Leoxia.Abstractions.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.DriveInfo/)<br/>
+[Leoxia.Abstractions.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.Watcher/)<br/>
 
-[Leoxia.Implementations](https://www.nuget.org/packages/Leoxia.Implementations/)
-[Leoxia.Implementations.Time](https://www.nuget.org/packages/Leoxia.Implementations.Time/)
-[Leoxia.Implementations.IO](https://www.nuget.org/packages/Leoxia.Implementations.IO/)
-[Leoxia.Implementations.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.Watcher/)
-[Leoxia.Implementations.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.DriveInfo/)
+[Leoxia.Implementations](https://www.nuget.org/packages/Leoxia.Implementations/)<br/>
+[Leoxia.Implementations.Time](https://www.nuget.org/packages/Leoxia.Implementations.Time/)<br/>
+[Leoxia.Implementations.IO](https://www.nuget.org/packages/Leoxia.Implementations.IO/)<br/>
+[Leoxia.Implementations.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.Watcher/)<br/>
+[Leoxia.Implementations.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.DriveInfo/)<br/>
 
 ## Specificities
 
