@@ -21,7 +21,7 @@ We don't want the abstractions to be secretely casted to another "not-so-abstrac
 - We use a convenient extension method Adap() to adap all classes instances intended to be adapted to the mockable interface. See [Design Pattern Adapter](https://en.wikipedia.org/wiki/Adapter_pattern)
 - Abstractions are in the separate library. Implementations are in another.
 - If abstractions are interfaces, they don't need to be tested.
-- We don't provide any kind of test tools. Use a mock library instead.
+- We don't provide any kind of test tools. Use a mock library instead, like [Moq](https://github.com/Moq/moq4/wiki/Quickstart)
 - We use a library name because it's not part of the framework and we don't want any namespace conflicts.
 Furthermore we followed the namespace policy : https://msdn.microsoft.com/en-us/library/ms229026(v=vs.110).aspx
 ie:	`[CompanyName].[ProductName].[Something_That_Follow_The_Other_Rules]`
