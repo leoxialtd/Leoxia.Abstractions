@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <Company>Leoxia Ltd</Company>
-    <Description>Abstractions for System.IO.FileSystem.Watcher
-Provides:
-  IFileSystemWatcher</Description>
-    <Authors>Leoxia</Authors>
-    <Version>1.1.93</Version>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Description>Abstractions for System.Diagnostics.
+Provides:
+    IStopwatch
+    IStopwatchFactory</Description>
+    <Authors>Leoxia</Authors>
+    <Company>Leoxia Ltd</Company>
+    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
@@ -16,19 +16,16 @@ Provides:
     <RepositoryType>Git</RepositoryType>
     <PackageTags>testability abstractions mockability leoxia</PackageTags>
     <PackageReleaseNotes />
+    <Version>1.1.93</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.4\Leoxia.Abstractions.IO.FileSystem.Watcher.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.3\Leoxia.Abstractions.IO.FileSystem.Watcher.xml</DocumentationFile>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\netstandard1.4\Leoxia.Abstractions.Diagnostics.xml</DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="System.IO.FileSystem.Watcher" Version="4.3.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Leoxia.Abstractions.IO\Leoxia.Abstractions.IO.csproj" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.0\Leoxia.Abstractions.Diagnostics.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
 </Project>

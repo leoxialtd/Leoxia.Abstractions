@@ -1,30 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <Company>Leoxia Ltd</Company>
-    <Authors>Leoxia</Authors>
-    <Product>Leoxia.Implementations.IO</Product>
-    <Description>Implementations for IO Abstractions of Leoxia.Lx.IO.Abstractions</Description>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.93</Version>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <Description>Implementations for Leoxia.Abstractions.Diagnostics.
+Provides Implementations for:
+    IStopwatch
+    IStopwatchFactory</Description>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Authors>Leoxia</Authors>
+    <Company>Leoxia Ltd</Company>
+    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/leoxialtd/Leoxia.Abstractions</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
-    <PackageReleaseNotes />
     <PackageTags>testability abstractions mockability leoxia</PackageTags>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.4\Leoxia.Implementations.IO.xml</DocumentationFile>
+    <PackageReleaseNotes />
+    <Version>1.1.93</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.3\Leoxia.Implementations.IO.xml</DocumentationFile>
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
+    <DocumentationFile>bin\Release\netstandard1.0\Leoxia.Implementations.Diagnostics.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Leoxia.Abstractions.IO\Leoxia.Abstractions.IO.csproj" />
+    <ProjectReference Include="..\Leoxia.Abstractions.Diagnostics\Leoxia.Abstractions.Diagnostics.csproj" />
   </ItemGroup>
 </Project>

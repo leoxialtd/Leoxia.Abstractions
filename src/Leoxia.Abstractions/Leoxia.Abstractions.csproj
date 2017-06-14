@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <Company>Leoxia Ltd</Company>
     <Description>Abstractions for System classes.
 Provides:
@@ -10,7 +10,7 @@ Provides:
     ITimeProvider</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.93.0</Version>
+    <Version>1.1.93</Version>
     <PackageReleaseNotes>
     </PackageReleaseNotes>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
@@ -24,5 +24,12 @@ Provides:
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard1.4\.xml</DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.0\Leoxia.Abstractions.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
 </Project>

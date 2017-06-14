@@ -8,7 +8,7 @@ Provides Implementations for:
   IEnvironment</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.1.93.0</Version>
+    <Version>1.1.93</Version>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
@@ -20,6 +20,11 @@ Provides Implementations for:
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netstandard1.5\Leoxia.Implementations.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.5\Leoxia.Implementations.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Leoxia.Abstractions\Leoxia.Abstractions.csproj" />
