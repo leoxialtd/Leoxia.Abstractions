@@ -37,6 +37,7 @@ IFileInfo for FileInfo, etc... You can use Build method or IFileInfoFactory and 
 
 With the following code:
 
+```csharp
     public class MyClass
     {
         private readonly IFile _fileSystem;
@@ -62,9 +63,11 @@ With the following code:
     {
         string Init(string fileName);
     }
+```
 
 And the test class :
 
+```csharp
     public class UsageTest
     {
         [Fact]
@@ -80,6 +83,7 @@ And the test class :
             Assert.Equal("fooBar", myClass.Init("myFile"));
         }
     }
+```
 
 Note: The best is to avoid reference the implementations outside of the main program (which does the IOC resolution of interfaces to classes).
 
