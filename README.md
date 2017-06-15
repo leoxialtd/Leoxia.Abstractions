@@ -9,12 +9,14 @@ Abstractions for Assembly, Console, File, FileInfo and other static classes or s
 [Leoxia.Abstractions.IO](https://www.nuget.org/packages/Leoxia.Abstractions.IO/)<br/>
 [Leoxia.Abstractions.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.DriveInfo/)<br/>
 [Leoxia.Abstractions.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.Watcher/)<br/>
+[Leoxia.Abstractions.Diagnostics](https://www.nuget.org/packages/Leoxia.Abstractions.Diagnostics/)<br/>
 
 [Leoxia.Implementations](https://www.nuget.org/packages/Leoxia.Implementations/)<br/>
 [Leoxia.Implementations.Time](https://www.nuget.org/packages/Leoxia.Implementations.Time/)<br/>
 [Leoxia.Implementations.IO](https://www.nuget.org/packages/Leoxia.Implementations.IO/)<br/>
 [Leoxia.Implementations.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.Watcher/)<br/>
 [Leoxia.Implementations.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.DriveInfo/)<br/>
+[Leoxia.Implementations.Diagnostics](https://www.nuget.org/packages/Leoxia.Implementations.Diagnostics/)<br/>
 
 ## Specificities
 
