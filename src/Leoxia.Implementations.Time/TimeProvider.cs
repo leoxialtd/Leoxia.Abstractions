@@ -31,6 +31,7 @@ using Leoxia.Abstractions;
 
 #endregion
 
+// ReSharper disable once CheckNamespace
 namespace Leoxia.Implementations
 {
     /// <summary>

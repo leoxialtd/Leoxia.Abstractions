@@ -11,12 +11,13 @@ Provides Implementations for:
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
-    <PackageIconUrl>https://github.com/leoxialtd/Leoxia.Abstractions/images/icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/leoxialtd/Leoxia.Abstractions/master/images/icon.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/leoxialtd/Leoxia.Abstractions</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>testability abstractions mockability leoxia</PackageTags>
     <PackageReleaseNotes />
-    <Version>1.1.93</Version>
+    <Version>1.2.1.0</Version>
+    <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
