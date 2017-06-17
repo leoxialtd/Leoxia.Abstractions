@@ -1,6 +1,8 @@
 # Leoxia.Abstractions
 Abstractions for Assembly, Console, File, FileInfo and other static classes or static methods not mockable.
 
+[Original Repository](https://gitlab.leoxia.com/leoxia/Lx.Abstractions)
+
 [![Build status](https://ci.appveyor.com/api/projects/status/dv2p17pi7aqq4mj5?svg=true)](https://ci.appveyor.com/project/leoxialtd/leoxia-abstractions)
 
 ## Packages are available on Nuget.org
