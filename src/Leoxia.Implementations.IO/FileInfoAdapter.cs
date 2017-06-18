@@ -5,6 +5,10 @@
 //    Copyright (c) 2017 Leoxia Ltd
 // </copyright>
 // 
+// .NET Software Development
+// https://www.leoxia.com
+// Build. Tomorrow. Together
+// 
 // MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
