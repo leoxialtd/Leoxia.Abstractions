@@ -10,7 +10,7 @@ Provides:
     ITimeProvider</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.3.0.0</Version>
+    <Version>1.3.1.0</Version>
     <PackageReleaseNotes>
     </PackageReleaseNotes>
     <PackageLicenseUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/LICENSE</PackageLicenseUrl>
