@@ -8,7 +8,7 @@ Provides Implementations for:
   IEnvironment</Description>
     <Authors>Leoxia</Authors>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.2.1.0</Version>
+    <Version>1.2.3.0</Version>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/leoxialtd/Leoxia.Abstractions/master/images/icon.png</PackageIconUrl>

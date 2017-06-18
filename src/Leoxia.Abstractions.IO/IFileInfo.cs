@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IFileInfo.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -63,7 +67,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         string DirectoryName { get; }
 
-
         /// <summary>Gets or sets a value that determines if the current file is read only.</summary>
         /// <returns>true if the current file is read only; otherwise, false.</returns>
         /// <exception cref="T:System.IO.FileNotFoundException">
@@ -80,7 +83,6 @@ namespace Leoxia.Abstractions.IO
         ///     property to false.
         /// </exception>
         bool IsReadOnly { get; set; }
-
 
         /// <summary>Gets the size, in bytes, of the current file.</summary>
         /// <returns>The size of the current file in bytes.</returns>
@@ -104,7 +106,6 @@ namespace Leoxia.Abstractions.IO
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
         IStreamWriter AppendText();
-
 
         /// <summary>Copies an existing file to a new file, allowing the overwriting of an existing file.</summary>
         /// <returns>
@@ -201,7 +202,6 @@ namespace Leoxia.Abstractions.IO
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
         IStreamWriter CreateText();
-
 
         /// <summary>Moves a specified file to a new location, providing the option to specify a new file name.</summary>
         /// <param name="destFileName">The path to move the file to, which can specify a different file name. </param>

@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DriveInfoAdapter.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -45,7 +49,6 @@ namespace Leoxia.Implementations.IO.FileSystem.DriveInfo
         /// </summary>
         private readonly System.IO.DriveInfo _driveInfo;
 
-
         /// <summary>
         ///     Initializes a new instance of the <see cref="DriveInfoAdapter" /> class which acts as a wrapper of
         ///     <see cref="DriveInfo" />
@@ -55,7 +58,6 @@ namespace Leoxia.Implementations.IO.FileSystem.DriveInfo
         {
             _driveInfo = driveInfo ?? throw new ArgumentNullException(nameof(driveInfo));
         }
-
 
         /// <summary>Indicates the amount of available free space on a drive, in bytes.</summary>
         /// <returns>The amount of free space available on the drive, in bytes.</returns>

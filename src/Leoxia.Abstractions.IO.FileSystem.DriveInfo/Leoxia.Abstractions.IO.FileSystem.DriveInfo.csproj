@@ -7,7 +7,7 @@ Provides:
   IDriveInfo
   IDriveInfoFactory</Description>
     <Authors>Leoxia</Authors>
-    <Version>1.2.1.0</Version>
+    <Version>1.2.3.0</Version>
     <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/leoxialtd/Leoxia.Abstractions/blob/master/LICENSE.md</PackageLicenseUrl>

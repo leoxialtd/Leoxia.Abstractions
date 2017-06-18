@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FileAdapter.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -253,7 +257,6 @@ namespace Leoxia.Implementations.IO
         {
             return File.Exists(path);
         }
-
 
         /// <summary>
         ///     Gets the <see cref="T:System.IO.FileAttributes" /> of the file on the path.
@@ -763,7 +766,6 @@ namespace Leoxia.Implementations.IO
             File.SetLastWriteTimeUtc(path, lastWriteTimeUtc);
         }
 
-
         /// <summary>
         ///     Creates a new file, writes the specified byte array to the file, and then closes the file. If the target file
         ///     already exists, it is overwritten.
@@ -818,7 +820,6 @@ namespace Leoxia.Implementations.IO
             File.WriteAllText(path, contents);
         }
 
-
         /// <summary>
         ///     Creates a new file, writes the specified string to the file using the specified encoding, and then closes the
         ///     file. If the target file already exists, it is overwritten.
@@ -845,7 +846,6 @@ namespace Leoxia.Implementations.IO
         {
             File.WriteAllLines(path, contents);
         }
-
 
         /// <summary>
         ///     Writes all lines.

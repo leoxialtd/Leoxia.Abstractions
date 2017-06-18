@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IDirectory.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -180,7 +184,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         IEnumerable<string> EnumerateDirectories(string path);
 
-
         /// <summary>Returns an enumerable collection of directory names that match a search pattern in a specified path.</summary>
         /// <returns>
         ///     An enumerable collection of the full names (including paths) for the directories in the directory specified by
@@ -214,7 +217,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.Security.SecurityException">The caller does not have the required permission. </exception>
         /// <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         IEnumerable<string> EnumerateDirectories(string path, string searchPattern);
-
 
         /// <summary>
         ///     Returns an enumerable collection of directory names that match a search pattern in a specified path, and
@@ -368,7 +370,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         IEnumerable<string> EnumerateFiles(string path, string searchPattern, SearchOption searchOption);
 
-
         /// <summary>Returns an enumerable collection of file names and directory names in a specified path. </summary>
         /// <returns>An enumerable collection of file-system entries in the directory specified by <paramref name="path" />.</returns>
         /// <param name="path">The relative or absolute path to the directory to search. This string is not case-sensitive.</param>
@@ -393,7 +394,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.Security.SecurityException">The caller does not have the required permission. </exception>
         /// <exception cref="T:System.UnauthorizedAccessException">The caller does not have the required permission.</exception>
         IEnumerable<string> EnumerateFileSystemEntries(string path);
-
 
         /// <summary>
         ///     Returns an enumerable collection of file names and directory names that  match a search pattern in a specified
@@ -490,7 +490,6 @@ namespace Leoxia.Abstractions.IO
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
         bool Exists(string path);
-
 
         /// <summary>Gets the creation date and time of a directory.</summary>
         /// <returns>
@@ -598,7 +597,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         string[] GetDirectories(string path);
 
-
         /// <summary>
         ///     Returns the names of subdirectories (including their paths) that match the specified search pattern in the
         ///     specified directory.
@@ -641,7 +639,6 @@ namespace Leoxia.Abstractions.IO
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
         string[] GetDirectories(string path, string searchPattern);
-
 
         /// <summary>
         ///     Returns the names of the subdirectories (including their paths) that match the specified search pattern in the
@@ -789,7 +786,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         string[] GetFiles(string path, string searchPattern);
 
-
         /// <summary>
         ///     Returns the names of files (including their paths) that match the specified search pattern in the specified
         ///     directory, using a value to determine whether to search subdirectories.
@@ -833,7 +829,6 @@ namespace Leoxia.Abstractions.IO
         ///     <paramref name="path" /> is a file name.-or-A network error has occurred.
         /// </exception>
         string[] GetFiles(string path, string searchPattern, SearchOption searchOption);
-
 
         /// <summary>Returns the names of all files and subdirectories in a specified path.</summary>
         /// <returns>
@@ -983,7 +978,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         DateTime GetLastAccessTime(string path);
 
-
         /// <summary>
         ///     Returns the date and time, in Coordinated Universal Time (UTC) format, that the specified file or directory
         ///     was last accessed.
@@ -1015,7 +1009,6 @@ namespace Leoxia.Abstractions.IO
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
         DateTime GetLastAccessTimeUtc(string path);
-
 
         /// <summary>Returns the date and time the specified file or directory was last written to.</summary>
         /// <returns>

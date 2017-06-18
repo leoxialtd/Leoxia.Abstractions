@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FileSystemWatcherAdapter.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -41,7 +45,6 @@ namespace Leoxia.Implementations.IO.FileSystem.Watcher
     public class FileSystemWatcherAdapter : IFileSystemWatcher
     {
         private readonly FileSystemWatcher _watcher;
-
 
         /// <summary>Initializes a new instance of the <see cref="FileSystemWatcherAdapter" /> class.</summary>
         public FileSystemWatcherAdapter()

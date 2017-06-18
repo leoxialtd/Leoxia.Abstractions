@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FileSystemInfoFactory.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -39,8 +43,8 @@ namespace Leoxia.Implementations.IO
     public class FileSystemInfoFactory : IFileSystemInfoFactory
     {
         private readonly IDirectoryInfoFactory _directoryInfoFactory = new DirectoryInfoFactory();
-        private readonly IFileInfoFactory _fileInfoFactory = new FileInfoFactory();
 
+        private readonly IFileInfoFactory _fileInfoFactory = new FileInfoFactory();
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="FileSystemInfoFactory" /> class.
@@ -77,6 +81,7 @@ namespace Leoxia.Implementations.IO
             {
                 return fileInfo;
             }
+
             return _directoryInfoFactory.Build(fileName);
         }
     }

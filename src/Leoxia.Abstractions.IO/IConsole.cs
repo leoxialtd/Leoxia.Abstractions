@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IConsole.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -61,7 +65,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         ConsoleColor BackgroundColor { get; set; }
 
-
         /// <summary>
         ///     Gets or sets the height of the buffer.
         /// </summary>
@@ -69,7 +72,6 @@ namespace Leoxia.Abstractions.IO
         ///     The height of the buffer.
         /// </value>
         int BufferHeight { get; set; }
-
 
         /// <summary>
         ///     Gets or sets the width of the buffer.
@@ -79,7 +81,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         int BufferWidth { get; set; }
 
-
         /// <summary>
         ///     Gets a value indicating whether [caps lock].
         /// </summary>
@@ -87,7 +88,6 @@ namespace Leoxia.Abstractions.IO
         ///     <c>true</c> if [caps lock]; otherwise, <c>false</c>.
         /// </value>
         bool CapsLock { get; }
-
 
         /// <summary>
         ///     Gets or sets the cursor left.
@@ -97,7 +97,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         int CursorLeft { get; set; }
 
-
         /// <summary>
         ///     Gets or sets the size of the cursor.
         /// </summary>
@@ -105,7 +104,6 @@ namespace Leoxia.Abstractions.IO
         ///     The size of the cursor.
         /// </value>
         int CursorSize { get; set; }
-
 
         /// <summary>
         ///     Gets or sets the cursor top.
@@ -115,7 +113,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         int CursorTop { get; set; }
 
-
         /// <summary>
         ///     Gets or sets a value indicating whether [cursor visible].
         /// </summary>
@@ -124,12 +121,10 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         bool CursorVisible { get; set; }
 
-
         /// <summary>Gets the standard error output stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextWriter" /> that represents the standard error output stream.</returns>
         /// <filterpriority>1</filterpriority>
         ITextWriter Error { get; }
-
 
         /// <summary>Gets or sets the foreground color of the console.</summary>
         /// <returns>
@@ -150,12 +145,10 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         ConsoleColor ForegroundColor { get; set; }
 
-
         /// <summary>Gets the standard input stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextReader" /> that represents the standard input stream.</returns>
         /// <filterpriority>1</filterpriority>
         ITextReader In { get; }
-
 
         /// <summary>
         ///     Gets or sets the input encoding.
@@ -165,7 +158,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         Encoding InputEncoding { get; set; }
 
-
         /// <summary>
         ///     Gets a value indicating whether this instance is error redirected.
         /// </summary>
@@ -173,7 +165,6 @@ namespace Leoxia.Abstractions.IO
         ///     <c>true</c> if this instance is error redirected; otherwise, <c>false</c>.
         /// </value>
         bool IsErrorRedirected { get; }
-
 
         /// <summary>
         ///     Gets a value indicating whether this instance is input redirected.
@@ -183,7 +174,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         bool IsInputRedirected { get; }
 
-
         /// <summary>
         ///     Gets a value indicating whether this instance is output redirected.
         /// </summary>
@@ -191,7 +181,6 @@ namespace Leoxia.Abstractions.IO
         ///     <c>true</c> if this instance is output redirected; otherwise, <c>false</c>.
         /// </value>
         bool IsOutputRedirected { get; }
-
 
         /// <summary>
         ///     Gets a value indicating whether [key available].
@@ -201,7 +190,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         bool KeyAvailable { get; }
 
-
         /// <summary>
         ///     Gets the height of the largest window.
         /// </summary>
@@ -209,7 +197,6 @@ namespace Leoxia.Abstractions.IO
         ///     The height of the largest window.
         /// </value>
         int LargestWindowHeight { get; }
-
 
         /// <summary>
         ///     Gets the width of the largest window.
@@ -219,7 +206,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         int LargestWindowWidth { get; }
 
-
         /// <summary>
         ///     Gets a value indicating whether [number lock].
         /// </summary>
@@ -228,12 +214,10 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         bool NumberLock { get; }
 
-
         /// <summary>Gets the standard output stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextWriter" /> that represents the standard output stream.</returns>
         /// <filterpriority>1</filterpriority>
         ITextWriter Out { get; }
-
 
         /// <summary>
         ///     Gets or sets the output encoding.
@@ -243,7 +227,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         Encoding OutputEncoding { get; set; }
 
-
         /// <summary>
         ///     Gets or sets the title.
         /// </summary>
@@ -251,7 +234,6 @@ namespace Leoxia.Abstractions.IO
         ///     The title.
         /// </value>
         string Title { get; set; }
-
 
         /// <summary>
         ///     Gets or sets a value indicating whether [treat control c as input].
@@ -261,7 +243,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         bool TreatControlCAsInput { get; set; }
 
-
         /// <summary>
         ///     Gets or sets the height of the window.
         /// </summary>
@@ -269,7 +250,6 @@ namespace Leoxia.Abstractions.IO
         ///     The height of the window.
         /// </value>
         int WindowHeight { get; set; }
-
 
         /// <summary>
         ///     Gets or sets the window left.
@@ -279,7 +259,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         int WindowLeft { get; set; }
 
-
         /// <summary>
         ///     Gets or sets the window top.
         /// </summary>
@@ -287,7 +266,6 @@ namespace Leoxia.Abstractions.IO
         ///     The window top.
         /// </value>
         int WindowTop { get; set; }
-
 
         /// <summary>
         ///     Gets or sets the width of the window.
@@ -297,7 +275,6 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         int WindowWidth { get; set; }
 
-
         /// <summary>
         ///     Occurs when the <see cref="F:System.ConsoleModifiers.Control" /> modifier key (Ctrl) and either the
         ///     <see cref="F:System.ConsoleKey.C" /> console key (C) or the Break key are pressed simultaneously (Ctrl+C or
@@ -306,12 +283,10 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         event ConsoleCancelEventHandler CancelKeyPress;
 
-
         /// <summary>
         ///     Beeps this instance.
         /// </summary>
         void Beep();
-
 
         /// <summary>
         ///     Beeps the specified frequency.
@@ -320,12 +295,10 @@ namespace Leoxia.Abstractions.IO
         /// <param name="duration">The duration.</param>
         void Beep(int frequency, int duration);
 
-
         /// <summary>
         ///     Clears this instance.
         /// </summary>
         void Clear();
-
 
         /// <summary>
         ///     Moves the buffer area.
@@ -336,9 +309,13 @@ namespace Leoxia.Abstractions.IO
         /// <param name="sourceHeight">Height of the source.</param>
         /// <param name="targetLeft">The target left.</param>
         /// <param name="targetTop">The target top.</param>
-        void MoveBufferArea(int sourceLeft, int sourceTop, int sourceWidth, int sourceHeight,
-            int targetLeft, int targetTop);
-
+        void MoveBufferArea(
+            int sourceLeft,
+            int sourceTop,
+            int sourceWidth,
+            int sourceHeight,
+            int targetLeft,
+            int targetTop);
 
         /// <summary>
         ///     Moves the buffer area.
@@ -352,27 +329,31 @@ namespace Leoxia.Abstractions.IO
         /// <param name="sourceChar">The source character.</param>
         /// <param name="sourceForeColor">Color of the source fore.</param>
         /// <param name="sourceBackColor">Color of the source back.</param>
-        void MoveBufferArea(int sourceLeft, int sourceTop, int sourceWidth, int sourceHeight,
-            int targetLeft, int targetTop, char sourceChar, ConsoleColor sourceForeColor, ConsoleColor sourceBackColor);
-
+        void MoveBufferArea(
+            int sourceLeft,
+            int sourceTop,
+            int sourceWidth,
+            int sourceHeight,
+            int targetLeft,
+            int targetTop,
+            char sourceChar,
+            ConsoleColor sourceForeColor,
+            ConsoleColor sourceBackColor);
 
         /// <summary>Acquires the standard error stream.</summary>
         /// <returns>The standard error stream.</returns>
         /// <filterpriority>1</filterpriority>
         Stream OpenStandardError();
 
-
         /// <summary>Acquires the standard input stream.</summary>
         /// <returns>The standard input stream.</returns>
         /// <filterpriority>1</filterpriority>
         Stream OpenStandardInput();
 
-
         /// <summary>Acquires the standard output stream.</summary>
         /// <returns>The standard output stream.</returns>
         /// <filterpriority>1</filterpriority>
         Stream OpenStandardOutput();
-
 
         /// <summary>Reads the next character from the standard input stream.</summary>
         /// <returns>
@@ -383,13 +364,11 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         int Read();
 
-
         /// <summary>
         ///     Reads the key.
         /// </summary>
         /// <returns></returns>
         ConsoleKeyInfo ReadKey();
-
 
         /// <summary>
         ///     Reads the key.
@@ -397,7 +376,6 @@ namespace Leoxia.Abstractions.IO
         /// <param name="intercept">if set to <c>true</c> [intercept].</param>
         /// <returns></returns>
         ConsoleKeyInfo ReadKey(bool intercept);
-
 
         /// <summary>Reads the next line of characters from the standard input stream.</summary>
         /// <returns>The next line of characters from the input stream, or null if no more lines are available.</returns>
@@ -413,7 +391,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         string ReadLine();
 
-
         /// <summary>Sets the foreground and background console colors to their defaults.</summary>
         /// <exception cref="T:System.Security.SecurityException">The user does not have permission to perform this action. </exception>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
@@ -425,7 +402,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         void ResetColor();
 
-
         /// <summary>
         ///     Sets the size of the buffer.
         /// </summary>
@@ -433,14 +409,12 @@ namespace Leoxia.Abstractions.IO
         /// <param name="height">The height.</param>
         void SetBufferSize(int width, int height);
 
-
         /// <summary>
         ///     Sets the cursor position.
         /// </summary>
         /// <param name="left">The left.</param>
         /// <param name="top">The top.</param>
         void SetCursorPosition(int left, int top);
-
 
         /// <summary>
         ///     Sets the <see cref="P:System.Console.Error" /> property to the specified <see cref="T:System.IO.TextWriter" />
@@ -459,7 +433,6 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         void SetError(TextWriter newError);
 
-
         /// <summary>
         ///     Sets the <see cref="P:System.Console.In" /> property to the specified <see cref="T:System.IO.TextReader" />
         ///     object.
@@ -476,7 +449,6 @@ namespace Leoxia.Abstractions.IO
         ///         version="1" Flags="UnmanagedCode" />
         /// </PermissionSet>
         void SetIn(TextReader newIn);
-
 
         /// <summary>
         ///     Sets the <see cref="P:System.Console.Out" /> property to the specified <see cref="T:System.IO.TextWriter" />
@@ -495,14 +467,12 @@ namespace Leoxia.Abstractions.IO
         /// </PermissionSet>
         void SetOut(TextWriter newOut);
 
-
         /// <summary>
         ///     Sets the window position.
         /// </summary>
         /// <param name="left">The left.</param>
         /// <param name="top">The top.</param>
         void SetWindowPosition(int left, int top);
-
 
         /// <summary>
         ///     Sets the size of the window.
@@ -511,13 +481,11 @@ namespace Leoxia.Abstractions.IO
         /// <param name="height">The height.</param>
         void SetWindowSize(int width, int height);
 
-
         /// <summary>Writes the text representation of the specified Boolean value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(bool value);
-
 
         /// <summary>Writes the specified Unicode character value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
@@ -525,13 +493,11 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(char value);
 
-
         /// <summary>Writes the specified array of Unicode characters to the standard output stream.</summary>
         /// <param name="buffer">A Unicode character array. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(char[] buffer);
-
 
         /// <summary>Writes the specified subarray of Unicode characters to the standard output stream.</summary>
         /// <param name="buffer">An array of Unicode characters. </param>
@@ -551,7 +517,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(char[] buffer, int index, int count);
 
-
         /// <summary>
         ///     Writes the text representation of the specified <see cref="T:System.Decimal" /> value to the standard output
         ///     stream.
@@ -560,7 +525,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(decimal value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified double-precision floating-point value to the standard output
@@ -571,13 +535,11 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(double value);
 
-
         /// <summary>Writes the text representation of the specified 32-bit signed integer value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(int value);
-
 
         /// <summary>Writes the text representation of the specified 64-bit signed integer value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
@@ -585,13 +547,11 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(long value);
 
-
         /// <summary>Writes the text representation of the specified object to the standard output stream.</summary>
         /// <param name="value">The value to write, or null. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(object value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified single-precision floating-point value to the standard output
@@ -602,13 +562,11 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(float value);
 
-
         /// <summary>Writes the specified string value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(string value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified object to the standard output stream using the specified
@@ -624,7 +582,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(string format, object arg0);
 
-
         /// <summary>
         ///     Writes the text representation of the specified objects to the standard output stream using the specified
         ///     format information.
@@ -639,7 +596,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid. </exception>
         /// <filterpriority>1</filterpriority>
         void Write(string format, object arg0, object arg1);
-
 
         /// <summary>
         ///     Writes the text representation of the specified objects to the standard output stream using the specified
@@ -657,7 +613,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(string format, object arg0, object arg1, object arg2);
 
-
         /// <summary>
         ///     Writes the text representation of the specified array of objects to the standard output stream using the
         ///     specified format information.
@@ -672,12 +627,10 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Write(string format, params object[] arg);
 
-
         /// <summary>Writes the current line terminator to the standard output stream.</summary>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine();
-
 
         /// <summary>
         ///     Writes the text representation of the specified Boolean value, followed by the current line terminator, to the
@@ -688,7 +641,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(bool value);
 
-
         /// <summary>
         ///     Writes the specified Unicode character, followed by the current line terminator, value to the standard output
         ///     stream.
@@ -698,7 +650,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(char value);
 
-
         /// <summary>
         ///     Writes the specified array of Unicode characters, followed by the current line terminator, to the standard
         ///     output stream.
@@ -707,7 +658,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(char[] buffer);
-
 
         /// <summary>
         ///     Writes the specified subarray of Unicode characters, followed by the current line terminator, to the standard
@@ -730,7 +680,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(char[] buffer, int index, int count);
 
-
         /// <summary>
         ///     Writes the text representation of the specified <see cref="T:System.Decimal" /> value, followed by the current
         ///     line terminator, to the standard output stream.
@@ -739,7 +688,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(decimal value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified double-precision floating-point value, followed by the current
@@ -750,7 +698,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(double value);
 
-
         /// <summary>
         ///     Writes the text representation of the specified 32-bit signed integer value, followed by the current line
         ///     terminator, to the standard output stream.
@@ -759,7 +706,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(int value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified 64-bit signed integer value, followed by the current line
@@ -770,7 +716,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(long value);
 
-
         /// <summary>
         ///     Writes the text representation of the specified object, followed by the current line terminator, to the
         ///     standard output stream.
@@ -779,7 +724,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(object value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified single-precision floating-point value, followed by the current
@@ -790,13 +734,11 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(float value);
 
-
         /// <summary>Writes the specified string value, followed by the current line terminator, to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(string value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified object, followed by the current line terminator, to the
@@ -811,7 +753,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(string format, object arg0);
-
 
         /// <summary>
         ///     Writes the text representation of the specified objects, followed by the current line terminator, to the
@@ -828,7 +769,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(string format, object arg0, object arg1);
 
-
         /// <summary>
         ///     Writes the text representation of the specified objects, followed by the current line terminator, to the
         ///     standard output stream using the specified format information.
@@ -844,7 +784,6 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.FormatException">The format specification in <paramref name="format" /> is invalid. </exception>
         /// <filterpriority>1</filterpriority>
         void WriteLine(string format, object arg0, object arg1, object arg2);
-
 
         /// <summary>
         ///     Writes the text representation of the specified array of objects, followed by the current line terminator, to

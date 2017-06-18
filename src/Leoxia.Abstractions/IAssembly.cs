@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IAssembly.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -81,7 +85,7 @@ namespace Leoxia.Abstractions
         string ImageRuntimeVersion { get; }
 
         /// <summary>
-        ///     Gets a value that indicates whether the current assembly was generated dynamically in the current process by
+        ///     Gets a value indicating whether the current assembly was generated dynamically in the current process by
         ///     using reflection emit.
         /// </summary>
         /// <returns>true if the current assembly was generated dynamically in the current process; otherwise, false.</returns>
@@ -107,7 +111,7 @@ namespace Leoxia.Abstractions
         ///     Creates the instance.
         /// </summary>
         /// <param name="typeName">Name of the type.</param>
-        /// <returns></returns>
+        /// <returns>New instance of the type specified name.</returns>
         object CreateInstance(string typeName);
 
         /// <summary>
@@ -115,14 +119,14 @@ namespace Leoxia.Abstractions
         /// </summary>
         /// <param name="typeName">Name of the type.</param>
         /// <param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
-        /// <returns></returns>
+        /// <returns>New instance of the type specified name.</returns>
         object CreateInstance(string typeName, bool ignoreCase);
 
         /// <summary>
         ///     Gets the custom attributes.
         /// </summary>
         /// <param name="inherit">if set to <c>true</c> [inherit].</param>
-        /// <returns></returns>
+        /// <returns>Custom attributes</returns>
         object[] GetCustomAttributes(bool inherit);
 
         /// <summary>
@@ -130,13 +134,13 @@ namespace Leoxia.Abstractions
         /// </summary>
         /// <param name="attributeType">Type of the attribute.</param>
         /// <param name="inherit">if set to <c>true</c> [inherit].</param>
-        /// <returns></returns>
+        /// <returns>Custom attributes</returns>
         object[] GetCustomAttributes(Type attributeType, bool inherit);
 
         /// <summary>
         ///     Gets the exported types.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Exported types</returns>
         Type[] GetExportedTypes();
 
         /// <summary>Returns information about how the given resource has been persisted.</summary>
@@ -192,7 +196,7 @@ namespace Leoxia.Abstractions
         /// <summary>
         ///     Gets the referenced assemblies.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Referenced assemblies</returns>
         AssemblyName[] GetReferencedAssemblies();
 
         /// <summary>
@@ -200,7 +204,7 @@ namespace Leoxia.Abstractions
         /// </summary>
         /// <param name="name">The name.</param>
         /// <param name="throwOnError">if set to <c>true</c> [throw on error].</param>
-        /// <returns></returns>
+        /// <returns>Type with the specified name</returns>
         Type GetType(string name, bool throwOnError);
 
         /// <summary>
@@ -263,7 +267,7 @@ namespace Leoxia.Abstractions
         /// <summary>
         ///     Gets the types.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Types of the assembly</returns>
         Type[] GetTypes();
 
         /// <summary>
@@ -304,7 +308,7 @@ namespace Leoxia.Abstractions
         /// <summary>
         ///     Gets the entry assembly.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Entry assembly</returns>
         IAssembly GetEntryAssembly();
 
         /// <summary>
@@ -312,7 +316,7 @@ namespace Leoxia.Abstractions
         /// </summary>
         /// <param name="assemblyName">Name of the assembly.</param>
         /// <param name="typeName">Name of the type.</param>
-        /// <returns></returns>
+        /// <returns>Qualified name</returns>
         string CreateQualifiedName(string assemblyName, string typeName);
     }
 }

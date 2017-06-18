@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="INotClsConsole.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -45,7 +49,6 @@ namespace Leoxia.Abstractions.IO
         [CLSCompliant(false)]
         void Write(uint value);
 
-
         /// <summary>Writes the text representation of the specified 64-bit unsigned integer value to the standard output stream.</summary>
         /// <param name="value">The value to write. </param>
         /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
@@ -62,7 +65,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         [CLSCompliant(false)]
         void WriteLine(uint value);
-
 
         /// <summary>
         ///     Writes the text representation of the specified 64-bit unsigned integer value, followed by the current line

@@ -1,8 +1,11 @@
 ﻿#region Copyright (c) 2017 Leoxia Ltd
 
-// MIT License
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="IEnvironment.cs" company="Leoxia Ltd">
+//    Copyright (c) 2017 Leoxia Ltd
+// </copyright>
 // 
-// Copyright (c) 2017 Leoxia Ltd
+// MIT License
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,6 +24,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+//  --------------------------------------------------------------------------------------------------------------------
 
 #endregion
 
@@ -45,13 +49,12 @@ namespace Leoxia.Abstractions
         int CurrentManagedThreadId { get; }
 
         /// <summary>
-        ///     Gets a value that indicates whether the current application domain is being unloaded or the common language
+        ///     Gets a value indicating whether the current application domain is being unloaded or the common language
         ///     runtime (CLR) is shutting down.
         /// </summary>
         /// <returns>true if the current application domain is being unloaded or the CLR is shutting down; otherwise, false.</returns>
         /// <filterpriority>1</filterpriority>
         bool HasShutdownStarted { get; }
-
 
         /// <summary>
         ///     Gets the name of the machine.
@@ -122,13 +125,11 @@ namespace Leoxia.Abstractions
         /// </PermissionSet>
         string ExpandEnvironmentVariables(string name);
 
-
         /// <summary>
         ///     Exits the program with the specific code.
         /// </summary>
         /// <param name="exitCode">The exit code.</param>
         void Exit(int exitCode);
-
 
         /// <summary>
         ///     Immediately terminates a process after writing a message to the Windows Application event log, and then
@@ -213,7 +214,7 @@ namespace Leoxia.Abstractions
         /// <summary>
         ///     Gets the command line arguments.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>command line arguments</returns>
         string[] GetCommandLineArgs();
     }
 }
