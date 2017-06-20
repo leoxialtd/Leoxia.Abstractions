@@ -7,7 +7,7 @@ Abstractions for Assembly, Console, File, FileInfo and other static classes or s
 
 ## Original repository
 
-This repository is a clone of [Leoxia GitLab](https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions)
+This repository is a clone of [Leoxia.Abstractions on GitLab](https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions)
 
 ## Build status
 
