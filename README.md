@@ -5,10 +5,15 @@ Abstractions for Assembly, Console, File, FileInfo and other static classes or s
 
 [![.NET Standard](https://img.shields.io/badge/Build_For-.NetStandard-0073AE.svg)](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
 
+## Original repository
 
-[Original Repository](https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions)
+This repository is a clone of [Leoxia.Abstractions on GitLab](https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/dv2p17pi7aqq4mj5?svg=true)](https://ci.appveyor.com/project/leoxialtd/leoxia-abstractions)
+## Build status
+
+OS  | Compiler | Status 
+-------- | :------------ | :------------ 
+Windows | Visual Studio 2017 | [![Build status](https://ci.appveyor.com/api/projects/status/dv2p17pi7aqq4mj5?svg=true)](https://ci.appveyor.com/project/leoxialtd/leoxia-abstractions)
 
 ## Packages 
 
