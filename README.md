@@ -1,24 +1,30 @@
 # Leoxia.Abstractions
 Abstractions for Assembly, Console, File, FileInfo and other static classes or static methods not mockable.
 
+[![.NET Core](https://img.shields.io/badge/Build_For-.NetCore-5C2D91.svg)](https://www.microsoft.com/net/core#windowsvs2017)
+
+[![.NET Standard](https://img.shields.io/badge/Build_For-.NetStandard-0073AE.svg)](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+
+
 [Original Repository](https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dv2p17pi7aqq4mj5?svg=true)](https://ci.appveyor.com/project/leoxialtd/leoxia-abstractions)
 
-## Packages are available on Nuget.org
+## Packages 
 
-[Leoxia.Abstractions](https://www.nuget.org/packages/Leoxia.Abstractions/)<br/>
-[Leoxia.Abstractions.IO](https://www.nuget.org/packages/Leoxia.Abstractions.IO/)<br/>
-[Leoxia.Abstractions.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.DriveInfo/)<br/>
-[Leoxia.Abstractions.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.Watcher/)<br/>
-[Leoxia.Abstractions.Diagnostics](https://www.nuget.org/packages/Leoxia.Abstractions.Diagnostics/)<br/>
-
-[Leoxia.Implementations](https://www.nuget.org/packages/Leoxia.Implementations/)<br/>
-[Leoxia.Implementations.Time](https://www.nuget.org/packages/Leoxia.Implementations.Time/)<br/>
-[Leoxia.Implementations.IO](https://www.nuget.org/packages/Leoxia.Implementations.IO/)<br/>
-[Leoxia.Implementations.IO.FileSystem.Watcher](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.Watcher/)<br/>
-[Leoxia.Implementations.IO.FileSystem.DriveInfo](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.DriveInfo/)<br/>
-[Leoxia.Implementations.Diagnostics](https://www.nuget.org/packages/Leoxia.Implementations.Diagnostics/)<br/>
+Package  | NuGet 
+-------- | :------------ 
+[Leoxia.Abstractions](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Abstractions) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Abstractions.svg)](https://www.nuget.org/packages/Leoxia.Abstractions/)
+[Leoxia.Abstractions.Diagnostics](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Abstractions.Diagnostics) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Abstractions.Diagnostics.svg)](https://www.nuget.org/packages/Leoxia.Abstractions.Diagnostics/)
+[Leoxia.Abstractions.IO](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Abstractions.IO) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Abstractions.IO.svg)](https://www.nuget.org/packages/Leoxia.Abstractions.IO/)
+[Leoxia.Abstractions.IO.FileSystem.DriveInfo](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Abstractions.IO.FileSystem.DriveInfo) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Abstractions.IO.FileSystem.DriveInfo.svg)](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.DriveInfo/)
+[Leoxia.Abstractions.IO.FileSystem.Watcher](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Abstractions.IO.FileSystem.Watcher) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Abstractions.IO.FileSystem.Watcher.svg)](https://www.nuget.org/packages/Leoxia.Abstractions.IO.FileSystem.Watcher/)
+[Leoxia.Implementations](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Implementations) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Implementations.svg)](https://www.nuget.org/packages/Leoxia.Implementations/)
+[Leoxia.Implementations.Diagnostics](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Implementations.Diagnostics) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Implementations.Diagnostics.svg)](https://www.nuget.org/packages/Leoxia.Implementations.Diagnostics/)
+[Leoxia.Implementations.IO](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Implementations.IO) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Implementations.IO.svg)](https://www.nuget.org/packages/Leoxia.Implementations.IO/)
+[Leoxia.Implementations.IO.FileSystem.DriveInfo](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Implementations.IO.FileSystem.DriveInfo) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Implementations.IO.FileSystem.DriveInfo.svg)](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.DriveInfo/)
+[Leoxia.Implementations.IO.FileSystem.Watcher](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Implementations.IO.FileSystem.Watcher) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Implementations.IO.FileSystem.Watcher.svg)](https://www.nuget.org/packages/Leoxia.Implementations.IO.FileSystem.Watcher/)
+[Leoxia.Implementations.Time](https://github.com/leoxialtd/Leoxia.Abstractions/tree/master/src/Leoxia.Implementations.Time) | [![NuGet version](https://badge.fury.io/nu/Leoxia.Implementations.Time.svg)](https://www.nuget.org/packages/Leoxia.Implementations.Time/)
 
 ## Specificities
 
