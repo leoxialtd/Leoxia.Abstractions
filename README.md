@@ -5,6 +5,8 @@ Abstractions for Assembly, Console, File, FileInfo and other static classes or s
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dv2p17pi7aqq4mj5?svg=true)](https://ci.appveyor.com/project/leoxialtd/leoxia-abstractions)
 
+[![NuGet version](https://badge.fury.io/nu/Leoxia.Abstractions.svg)](https://badge.fury.io/nu/Leoxia.Abstractions)
+
 ## Packages are available on Nuget.org
 
 [Leoxia.Abstractions](https://www.nuget.org/packages/Leoxia.Abstractions/)<br/>
