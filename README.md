@@ -1,6 +1,11 @@
 # Leoxia.Abstractions
 Abstractions for Assembly, Console, File, FileInfo and other static classes or static methods not mockable.
 
+[![.NET Core](https://img.shields.io/badge/Build_For-.NetCore-5C2D91.svg)](https://www.microsoft.com/net/core#windowsvs2017)
+
+[![.NET Standard](https://img.shields.io/badge/Build_For-.NetStandard-0073AE.svg)](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+
+
 [Original Repository](https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/dv2p17pi7aqq4mj5?svg=true)](https://ci.appveyor.com/project/leoxialtd/leoxia-abstractions)
