@@ -102,6 +102,8 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         int Read(char[] buffer, int index, int count);
 
+#if (!NET40)
+
         /// <summary>
         ///     Reads a specified maximum number of characters from the current text reader asynchronously and writes the data
         ///     to a buffer, beginning at the specified index.
@@ -136,6 +138,8 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation. </exception>
         Task<int> ReadAsync(char[] buffer, int index, int count);
 
+#endif
+
         /// <summary>
         ///     Reads a specified maximum number of characters from the current text reader and writes the data to a buffer,
         ///     beginning at the specified index.
@@ -165,6 +169,8 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
         /// <filterpriority>2</filterpriority>
         int ReadBlock(char[] buffer, int index, int count);
+
+#if (!NET40)
 
         /// <summary>
         ///     Reads a specified maximum number of characters from the current text reader asynchronously and writes the data
@@ -200,6 +206,8 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation. </exception>
         Task<int> ReadBlockAsync(char[] buffer, int index, int count);
 
+#endif
+
         /// <summary>Reads a line of characters from the text reader and returns the data as a string.</summary>
         /// <returns>The next line from the reader, or null if all characters have been read.</returns>
         /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
@@ -215,6 +223,8 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         string ReadLine();
 
+#if (!NET40)
+
         /// <summary>Reads a line of characters asynchronously and returns the data as a string. </summary>
         /// <returns>
         ///     A task that represents the asynchronous read operation. The value of the string parameter
@@ -227,6 +237,8 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.ObjectDisposedException">The text reader has been disposed.</exception>
         /// <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation. </exception>
         Task<string> ReadLineAsync();
+
+#endif
 
         /// <summary>Reads all characters from the current position to the end of the text reader and returns them as one string.</summary>
         /// <returns>A string that contains all characters from the current position to the end of the text reader.</returns>
@@ -243,6 +255,8 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         string ReadToEnd();
 
+#if (!NET40)
+
         /// <summary>
         ///     Reads all characters from the current position to the end of the text reader asynchronously and returns them
         ///     as one string.
@@ -258,5 +272,8 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.ObjectDisposedException">The text reader has been disposed.</exception>
         /// <exception cref="T:System.InvalidOperationException">The reader is currently in use by a previous read operation. </exception>
         Task<string> ReadToEndAsync();
+
+#endif
+
     }
 }

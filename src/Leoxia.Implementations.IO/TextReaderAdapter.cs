@@ -131,6 +131,8 @@ namespace Leoxia.Implementations.IO
             return _textReaderImplementation.Read(buffer, index, count);
         }
 
+        #if (!NET40)
+
         /// <summary>
         ///     Reads a specified maximum number of characters from the current text reader asynchronously and writes the data
         ///     to a buffer, beginning at the specified index.
@@ -168,6 +170,8 @@ namespace Leoxia.Implementations.IO
             return _textReaderImplementation.ReadAsync(buffer, index, count);
         }
 
+        #endif
+
         /// <summary>
         ///     Reads a specified maximum number of characters from the current text reader and writes the data to a buffer,
         ///     beginning at the specified index.
@@ -201,6 +205,8 @@ namespace Leoxia.Implementations.IO
             return _textReaderImplementation.ReadBlock(buffer, index, count);
         }
 
+#if (!NET40)
+                
         /// <summary>
         ///     Reads a specified maximum number of characters from the current text reader asynchronously and writes the data
         ///     to a buffer, beginning at the specified index.
@@ -238,6 +244,8 @@ namespace Leoxia.Implementations.IO
             return _textReaderImplementation.ReadBlockAsync(buffer, index, count);
         }
 
+#endif
+
         /// <summary>Reads a line of characters from the text reader and returns the data as a string.</summary>
         /// <returns>The next line from the reader, or null if all characters have been read.</returns>
         /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
@@ -256,6 +264,8 @@ namespace Leoxia.Implementations.IO
             return _textReaderImplementation.ReadLine();
         }
 
+#if (!NET40)
+
         /// <summary>Reads a line of characters asynchronously and returns the data as a string. </summary>
         /// <returns>
         ///     A task that represents the asynchronous read operation. The value of the string parameter
@@ -271,6 +281,8 @@ namespace Leoxia.Implementations.IO
         {
             return _textReaderImplementation.ReadLineAsync();
         }
+
+#endif
 
         /// <summary>Reads all characters from the current position to the end of the text reader and returns them as one string.</summary>
         /// <returns>A string that contains all characters from the current position to the end of the text reader.</returns>
@@ -290,6 +302,8 @@ namespace Leoxia.Implementations.IO
             return _textReaderImplementation.ReadToEnd();
         }
 
+#if (!NET40)
+
         /// <summary>
         ///     Reads all characters from the current position to the end of the text reader asynchronously and returns them
         ///     as one string.
@@ -308,5 +322,8 @@ namespace Leoxia.Implementations.IO
         {
             return _textReaderImplementation.ReadToEndAsync();
         }
+
+#endif
+
     }
 }

@@ -193,6 +193,8 @@ namespace Leoxia.Implementations.IO
             set => Console.InputEncoding = value;
         }
 
+#if (!NET40)
+
         /// <summary>
         ///     Gets a value indicating whether this instance is error redirected.
         /// </summary>
@@ -216,6 +218,8 @@ namespace Leoxia.Implementations.IO
         ///     <c>true</c> if this instance is output redirected; otherwise, <c>false</c>.
         /// </value>
         public bool IsOutputRedirected => Console.IsOutputRedirected;
+
+#endif
 
         /// <summary>Gets the standard input stream.</summary>
         /// <returns>A <see cref="T:System.IO.TextReader" /> that represents the standard input stream.</returns>
