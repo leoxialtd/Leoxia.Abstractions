@@ -102,6 +102,8 @@ namespace Leoxia.Implementations.IO
             Inner.Flush();
         }
 
+        #if (!NET40)
+
         /// <summary>
         ///     Asynchronously clears all buffers for the current writer and causes any buffered data to be written to the
         ///     underlying device.
@@ -113,6 +115,7 @@ namespace Leoxia.Implementations.IO
         {
             return Inner.FlushAsync();
         }
+        #endif
 
         /// <summary>Writes the text representation of a Boolean value to the text string or stream.</summary>
         /// <param name="value">The Boolean value to write. </param>
@@ -326,6 +329,8 @@ namespace Leoxia.Implementations.IO
             Inner.Write(format, arg);
         }
 
+#if (!NET40)
+
         /// <summary>Writes a character to the text string or stream asynchronously.</summary>
         /// <returns>A task that represents the asynchronous write operation.</returns>
         /// <param name="value">The character to write to the text stream.</param>
@@ -380,6 +385,9 @@ namespace Leoxia.Implementations.IO
         {
             return Inner.WriteAsync(value);
         }
+
+        #endif
+
 
         /// <summary>Writes a line terminator to the text string or stream.</summary>
         /// <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed. </exception>
@@ -613,6 +621,8 @@ namespace Leoxia.Implementations.IO
             Inner.WriteLine(format, arg);
         }
 
+        #if (!NET40)
+
         /// <summary>Writes a line terminator asynchronously to the text string or stream.</summary>
         /// <returns>A task that represents the asynchronous write operation. </returns>
         /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
@@ -676,5 +686,7 @@ namespace Leoxia.Implementations.IO
         {
             return Inner.WriteLineAsync(value);
         }
+
+        #endif
     }
 }

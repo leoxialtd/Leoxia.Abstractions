@@ -107,6 +107,8 @@ namespace Leoxia.Implementations.IO
             _streamWriter = new StreamWriter(stream, encoding, bufferSize);
         }
 
+#if (!NET40)
+
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:System.IO.StreamWriter" /> class for the specified stream by
         ///     using the specified encoding and buffer size, and optionally leaves the stream open.
@@ -131,6 +133,8 @@ namespace Leoxia.Implementations.IO
         {
             _streamWriter = new StreamWriter(stream, encoding, bufferSize, leaveOpen);
         }
+
+#endif
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="StreamWriterAdapter" /> class.
@@ -221,17 +225,6 @@ namespace Leoxia.Implementations.IO
         public void Flush()
         {
             _streamWriter.Flush();
-        }
-
-        /// <summary>
-        ///     Clears all buffers for this stream asynchronously and causes any buffered data to be written to the underlying
-        ///     device.
-        /// </summary>
-        /// <returns>A task that represents the asynchronous flush operation.</returns>
-        /// <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
-        public Task FlushAsync()
-        {
-            return _streamWriter.FlushAsync();
         }
 
         /// <summary>Gets an object that controls formatting.</summary>
@@ -483,70 +476,6 @@ namespace Leoxia.Implementations.IO
             _streamWriter.Write(value);
         }
 
-        /// <summary>Writes a subarray of characters to the stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="buffer">A character array that contains the data to write.</param>
-        /// <param name="index">The character position in the buffer at which to begin reading data.</param>
-        /// <param name="count">The maximum number of characters to write.</param>
-        /// <exception cref="T:System.ArgumentNullException">
-        ///     <paramref name="buffer" /> is null.
-        /// </exception>
-        /// <exception cref="T:System.ArgumentException">
-        ///     The <paramref name="index" /> plus <paramref name="count" /> is greater
-        ///     than the buffer length.
-        /// </exception>
-        /// <exception cref="T:System.ArgumentOutOfRangeException">
-        ///     <paramref name="index" /> or <paramref name="count" /> is negative.
-        /// </exception>
-        /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">
-        ///     The stream writer is currently in use by a previous write
-        ///     operation.
-        /// </exception>
-        public Task WriteAsync(char[] buffer, int index, int count)
-        {
-            return _streamWriter.WriteAsync(buffer, index, count);
-        }
-
-        /// <summary>Writes a string to the stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="value">The string to write to the stream. If <paramref name="value" /> is null, nothing is written.</param>
-        /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">
-        ///     The stream writer is currently in use by a previous write
-        ///     operation.
-        /// </exception>
-        public Task WriteAsync(string value)
-        {
-            return _streamWriter.WriteAsync(value);
-        }
-
-        /// <summary>Writes a character array to the text string or stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="buffer">
-        ///     The character array to write to the text stream. If <paramref name="buffer" /> is null, nothing is
-        ///     written.
-        /// </param>
-        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
-        public Task WriteAsync(char[] buffer)
-        {
-            return _streamWriter.WriteAsync(buffer);
-        }
-
-        /// <summary>Writes a character to the stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="value">The character to write to the stream.</param>
-        /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">
-        ///     The stream writer is currently in use by a previous write
-        ///     operation.
-        /// </exception>
-        public Task WriteAsync(char value)
-        {
-            return _streamWriter.WriteAsync(value);
-        }
-
         /// <summary>
         ///     Writes a formatted string and a new line to the text string or stream, using the same semantics as the
         ///     <see cref="M:System.String.Format(System.String,System.Object)" /> method.
@@ -763,6 +692,87 @@ namespace Leoxia.Implementations.IO
             _streamWriter.WriteLine(value);
         }
 
+#if (!NET40)
+
+
+        /// <summary>
+        ///     Clears all buffers for this stream asynchronously and causes any buffered data to be written to the underlying
+        ///     device.
+        /// </summary>
+        /// <returns>A task that represents the asynchronous flush operation.</returns>
+        /// <exception cref="T:System.ObjectDisposedException">The stream has been disposed.</exception>
+        public Task FlushAsync()
+        {
+            return _streamWriter.FlushAsync();
+        }
+
+
+
+
+        /// <summary>Writes a subarray of characters to the stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="buffer">A character array that contains the data to write.</param>
+        /// <param name="index">The character position in the buffer at which to begin reading data.</param>
+        /// <param name="count">The maximum number of characters to write.</param>
+        /// <exception cref="T:System.ArgumentNullException">
+        ///     <paramref name="buffer" /> is null.
+        /// </exception>
+        /// <exception cref="T:System.ArgumentException">
+        ///     The <paramref name="index" /> plus <paramref name="count" /> is greater
+        ///     than the buffer length.
+        /// </exception>
+        /// <exception cref="T:System.ArgumentOutOfRangeException">
+        ///     <paramref name="index" /> or <paramref name="count" /> is negative.
+        /// </exception>
+        /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">
+        ///     The stream writer is currently in use by a previous write
+        ///     operation.
+        /// </exception>
+        public Task WriteAsync(char[] buffer, int index, int count)
+        {
+            return _streamWriter.WriteAsync(buffer, index, count);
+        }
+
+        /// <summary>Writes a string to the stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="value">The string to write to the stream. If <paramref name="value" /> is null, nothing is written.</param>
+        /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">
+        ///     The stream writer is currently in use by a previous write
+        ///     operation.
+        /// </exception>
+        public Task WriteAsync(string value)
+        {
+            return _streamWriter.WriteAsync(value);
+        }
+
+        /// <summary>Writes a character array to the text string or stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="buffer">
+        ///     The character array to write to the text stream. If <paramref name="buffer" /> is null, nothing is
+        ///     written.
+        /// </param>
+        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
+        public Task WriteAsync(char[] buffer)
+        {
+            return _streamWriter.WriteAsync(buffer);
+        }
+
+        /// <summary>Writes a character to the stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="value">The character to write to the stream.</param>
+        /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">
+        ///     The stream writer is currently in use by a previous write
+        ///     operation.
+        /// </exception>
+        public Task WriteAsync(char value)
+        {
+            return _streamWriter.WriteAsync(value);
+        }
+
         /// <summary>Writes a line terminator asynchronously to the stream.</summary>
         /// <returns>A task that represents the asynchronous write operation.</returns>
         /// <exception cref="T:System.ObjectDisposedException">The stream writer is disposed.</exception>
@@ -838,5 +848,8 @@ namespace Leoxia.Implementations.IO
         {
             return _streamWriter.WriteLineAsync(buffer);
         }
+
+#endif
+
     }
 }

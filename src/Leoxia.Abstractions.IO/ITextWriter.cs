@@ -68,14 +68,6 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void Flush();
 
-        /// <summary>
-        ///     Asynchronously clears all buffers for the current writer and causes any buffered data to be written to the
-        ///     underlying device.
-        /// </summary>
-        /// <returns>A task that represents the asynchronous flush operation. </returns>
-        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">The writer is currently in use by a previous write operation. </exception>
-        Task FlushAsync();
 
         /// <summary>Writes the text representation of a Boolean value to the text string or stream.</summary>
         /// <param name="value">The Boolean value to write. </param>
@@ -243,49 +235,6 @@ namespace Leoxia.Abstractions.IO
         /// </exception>
         /// <filterpriority>1</filterpriority>
         void Write(string format, params object[] arg);
-
-        /// <summary>Writes a character to the text string or stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="value">The character to write to the text stream.</param>
-        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
-        Task WriteAsync(char value);
-
-        /// <summary>Writes a character array to the text string or stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="buffer">
-        ///     The character array to write to the text stream. If <paramref name="buffer" /> is null, nothing is
-        ///     written.
-        /// </param>
-        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
-        Task WriteAsync(char[] buffer);
-
-        /// <summary>Writes a subarray of characters to the text string or stream asynchronously. </summary>
-        /// <returns>A task that represents the asynchronous write operation.</returns>
-        /// <param name="buffer">The character array to write data from. </param>
-        /// <param name="index">The character position in the buffer at which to start retrieving data. </param>
-        /// <param name="count">The number of characters to write. </param>
-        /// <exception cref="T:System.ArgumentNullException">
-        ///     <paramref name="buffer" /> is null.
-        /// </exception>
-        /// <exception cref="T:System.ArgumentException">
-        ///     The <paramref name="index" /> plus <paramref name="count" /> is greater
-        ///     than the buffer length.
-        /// </exception>
-        /// <exception cref="T:System.ArgumentOutOfRangeException">
-        ///     <paramref name="index" /> or <paramref name="count" /> is negative.
-        /// </exception>
-        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
-        Task WriteAsync(char[] buffer, int index, int count);
-
-        /// <summary>Writes a string to the text string or stream asynchronously.</summary>
-        /// <returns>A task that represents the asynchronous write operation. </returns>
-        /// <param name="value">The string to write. If <paramref name="value" /> is null, nothing is written to the text stream.</param>
-        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
-        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
-        Task WriteAsync(string value);
 
         /// <summary>Writes a line terminator to the text string or stream.</summary>
         /// <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.TextWriter" /> is closed. </exception>
@@ -471,6 +420,61 @@ namespace Leoxia.Abstractions.IO
         /// <filterpriority>1</filterpriority>
         void WriteLine(string format, params object[] arg);
 
+#if (!NET40)
+
+        /// <summary>
+        ///     Asynchronously clears all buffers for the current writer and causes any buffered data to be written to the
+        ///     underlying device.
+        /// </summary>
+        /// <returns>A task that represents the asynchronous flush operation. </returns>
+        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">The writer is currently in use by a previous write operation. </exception>
+        Task FlushAsync();
+
+
+        /// <summary>Writes a character to the text string or stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="value">The character to write to the text stream.</param>
+        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
+        Task WriteAsync(char value);
+
+        /// <summary>Writes a character array to the text string or stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="buffer">
+        ///     The character array to write to the text stream. If <paramref name="buffer" /> is null, nothing is
+        ///     written.
+        /// </param>
+        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
+        Task WriteAsync(char[] buffer);
+
+        /// <summary>Writes a subarray of characters to the text string or stream asynchronously. </summary>
+        /// <returns>A task that represents the asynchronous write operation.</returns>
+        /// <param name="buffer">The character array to write data from. </param>
+        /// <param name="index">The character position in the buffer at which to start retrieving data. </param>
+        /// <param name="count">The number of characters to write. </param>
+        /// <exception cref="T:System.ArgumentNullException">
+        ///     <paramref name="buffer" /> is null.
+        /// </exception>
+        /// <exception cref="T:System.ArgumentException">
+        ///     The <paramref name="index" /> plus <paramref name="count" /> is greater
+        ///     than the buffer length.
+        /// </exception>
+        /// <exception cref="T:System.ArgumentOutOfRangeException">
+        ///     <paramref name="index" /> or <paramref name="count" /> is negative.
+        /// </exception>
+        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
+        Task WriteAsync(char[] buffer, int index, int count);
+
+        /// <summary>Writes a string to the text string or stream asynchronously.</summary>
+        /// <returns>A task that represents the asynchronous write operation. </returns>
+        /// <param name="value">The string to write. If <paramref name="value" /> is null, nothing is written to the text stream.</param>
+        /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
+        /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
+        Task WriteAsync(string value);
+
         /// <summary>Writes a line terminator asynchronously to the text string or stream.</summary>
         /// <returns>A task that represents the asynchronous write operation. </returns>
         /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
@@ -519,5 +523,8 @@ namespace Leoxia.Abstractions.IO
         /// <exception cref="T:System.ObjectDisposedException">The text writer is disposed.</exception>
         /// <exception cref="T:System.InvalidOperationException">The text writer is currently in use by a previous write operation. </exception>
         Task WriteLineAsync(string value);
+
+#endif
+
     }
 }

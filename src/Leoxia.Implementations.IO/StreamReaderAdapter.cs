@@ -149,6 +149,8 @@ namespace Leoxia.Implementations.IO
             _streamReader = new StreamReader(stream, encoding, detectEncodingFromByteOrderMarks, bufferSize);
         }
 
+#if (!NET40)
+
         /// <summary>
         ///     Initializes a new instance of the <see cref="T:System.IO.StreamReader" /> class for the specified stream based
         ///     on the specified character encoding, byte order mark detection option, and buffer size, and optionally leaves the
@@ -179,6 +181,8 @@ namespace Leoxia.Implementations.IO
                 bufferSize,
                 leaveOpen);
         }
+
+#endif
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="StreamReaderAdapter" /> class.
@@ -272,6 +276,67 @@ namespace Leoxia.Implementations.IO
         }
 
         /// <summary>
+        ///     Reads a specified maximum number of characters from the current stream and writes the data to a buffer,
+        ///     beginning at the specified index.
+        /// </summary>
+        /// <returns>
+        ///     The number of characters that have been read. The number will be less than or equal to
+        ///     <paramref name="count" />, depending on whether all input characters have been read.
+        /// </returns>
+        /// <param name="buffer">
+        ///     When this method returns, contains the specified character array with the values between
+        ///     <paramref name="index" /> and (index + count - 1) replaced by the characters read from the current source.
+        /// </param>
+        /// <param name="index">The position in <paramref name="buffer" /> at which to begin writing.</param>
+        /// <param name="count">The maximum number of characters to read.</param>
+        /// <exception cref="T:System.ArgumentNullException">
+        ///     <paramref name="buffer" /> is null.
+        /// </exception>
+        /// <exception cref="T:System.ArgumentException">
+        ///     The buffer length minus <paramref name="index" /> is less than
+        ///     <paramref name="count" />.
+        /// </exception>
+        /// <exception cref="T:System.ArgumentOutOfRangeException">
+        ///     <paramref name="index" /> or <paramref name="count" /> is negative.
+        /// </exception>
+        /// <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.StreamReader" /> is closed. </exception>
+        /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
+        public int ReadBlock(char[] buffer, int index, int count)
+        {
+            return _streamReader.ReadBlock(buffer, index, count);
+        }
+
+
+        /// <summary>Reads a line of characters from the current stream and returns the data as a string.</summary>
+        /// <returns>The next line from the input stream, or null if the end of the input stream is reached.</returns>
+        /// <exception cref="T:System.OutOfMemoryException">
+        ///     There is insufficient memory to allocate a buffer for the returned
+        ///     string.
+        /// </exception>
+        /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
+        public string ReadLine()
+        {
+            return _streamReader.ReadLine();
+        }
+
+        /// <summary>Reads all characters from the current position to the end of the stream.</summary>
+        /// <returns>
+        ///     The rest of the stream as a string, from the current position to the end. If the current position is at the
+        ///     end of the stream, returns an empty string ("").
+        /// </returns>
+        /// <exception cref="T:System.OutOfMemoryException">
+        ///     There is insufficient memory to allocate a buffer for the returned
+        ///     string.
+        /// </exception>
+        /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
+        public string ReadToEnd()
+        {
+            return _streamReader.ReadToEnd();
+        }
+        
+#if (!NET40)
+
+        /// <summary>
         ///     Reads a specified maximum number of characters from the current stream asynchronously and writes the data to a
         ///     buffer, beginning at the specified index.
         /// </summary>
@@ -307,38 +372,7 @@ namespace Leoxia.Implementations.IO
         {
             return _streamReader.ReadAsync(buffer, index, count);
         }
-
-        /// <summary>
-        ///     Reads a specified maximum number of characters from the current stream and writes the data to a buffer,
-        ///     beginning at the specified index.
-        /// </summary>
-        /// <returns>
-        ///     The number of characters that have been read. The number will be less than or equal to
-        ///     <paramref name="count" />, depending on whether all input characters have been read.
-        /// </returns>
-        /// <param name="buffer">
-        ///     When this method returns, contains the specified character array with the values between
-        ///     <paramref name="index" /> and (index + count - 1) replaced by the characters read from the current source.
-        /// </param>
-        /// <param name="index">The position in <paramref name="buffer" /> at which to begin writing.</param>
-        /// <param name="count">The maximum number of characters to read.</param>
-        /// <exception cref="T:System.ArgumentNullException">
-        ///     <paramref name="buffer" /> is null.
-        /// </exception>
-        /// <exception cref="T:System.ArgumentException">
-        ///     The buffer length minus <paramref name="index" /> is less than
-        ///     <paramref name="count" />.
-        /// </exception>
-        /// <exception cref="T:System.ArgumentOutOfRangeException">
-        ///     <paramref name="index" /> or <paramref name="count" /> is negative.
-        /// </exception>
-        /// <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.IO.StreamReader" /> is closed. </exception>
-        /// <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
-        public int ReadBlock(char[] buffer, int index, int count)
-        {
-            return _streamReader.ReadBlock(buffer, index, count);
-        }
-
+        
         /// <summary>
         ///     Reads a specified maximum number of characters from the current stream asynchronously and writes the data to a
         ///     buffer, beginning at the specified index.
@@ -376,18 +410,6 @@ namespace Leoxia.Implementations.IO
             return _streamReader.ReadBlockAsync(buffer, index, count);
         }
 
-        /// <summary>Reads a line of characters from the current stream and returns the data as a string.</summary>
-        /// <returns>The next line from the input stream, or null if the end of the input stream is reached.</returns>
-        /// <exception cref="T:System.OutOfMemoryException">
-        ///     There is insufficient memory to allocate a buffer for the returned
-        ///     string.
-        /// </exception>
-        /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
-        public string ReadLine()
-        {
-            return _streamReader.ReadLine();
-        }
-
         /// <summary>Reads a line of characters asynchronously from the current stream and returns the data as a string.</summary>
         /// <returns>
         ///     A task that represents the asynchronous read operation. The value of the Task.Result contains the next line
@@ -402,21 +424,6 @@ namespace Leoxia.Implementations.IO
         public Task<string> ReadLineAsync()
         {
             return _streamReader.ReadLineAsync();
-        }
-
-        /// <summary>Reads all characters from the current position to the end of the stream.</summary>
-        /// <returns>
-        ///     The rest of the stream as a string, from the current position to the end. If the current position is at the
-        ///     end of the stream, returns an empty string ("").
-        /// </returns>
-        /// <exception cref="T:System.OutOfMemoryException">
-        ///     There is insufficient memory to allocate a buffer for the returned
-        ///     string.
-        /// </exception>
-        /// <exception cref="T:System.IO.IOException">An I/O error occurs. </exception>
-        public string ReadToEnd()
-        {
-            return _streamReader.ReadToEnd();
         }
 
         /// <summary>
@@ -437,5 +444,7 @@ namespace Leoxia.Implementations.IO
         {
             return _streamReader.ReadToEndAsync();
         }
+        
+#endif
     }
 }

@@ -162,6 +162,8 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         Encoding InputEncoding { get; set; }
 
+#if (!NET40)
+
         /// <summary>
         ///     Gets a value indicating whether this instance is error redirected.
         /// </summary>
@@ -185,6 +187,8 @@ namespace Leoxia.Abstractions.IO
         ///     <c>true</c> if this instance is output redirected; otherwise, <c>false</c>.
         /// </value>
         bool IsOutputRedirected { get; }
+
+#endif
 
         /// <summary>
         ///     Gets a value indicating whether [key available].
