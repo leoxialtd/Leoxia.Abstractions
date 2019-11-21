@@ -56,7 +56,7 @@ namespace Leoxia.Implementations.IO
         /// <returns></returns>
         public static IFileSystemInfo[] Adapt(this IEnumerable<FileSystemInfo> enumerable)
         {
-            return enumerable.Select(item => item.Adapt()).ToArray();
+            return enumerable.Select(item => item?.Adapt()).ToArray();
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Leoxia.Implementations.IO
         /// <returns></returns>
         public static IDirectoryInfo[] Adapt(this IEnumerable<DirectoryInfo> enumerable)
         {
-            return enumerable.Select(d => d.Adapt()).ToArray();
+            return enumerable.Select(d => d?.Adapt()).ToArray();
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace Leoxia.Implementations.IO
         /// <returns></returns>
         public static IFileInfo[] Adapt(this IEnumerable<FileInfo> enumerable)
         {
-            return enumerable.Select(f => f.Adapt()).ToArray();
+            return enumerable.Select(f => f?.Adapt()).ToArray();
         }
 
         /// <summary>

@@ -285,7 +285,7 @@ namespace Leoxia.Implementations.IO
         ///         class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral,  KeyToken=b77a5c561934e089"
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
-        public IDirectoryInfo Directory => _fileInfo.Directory.Adapt();
+        public IDirectoryInfo Directory => _fileInfo.Directory?.Adapt();
 
         /// <summary>Gets a string representing the directory's full path.</summary>
         /// <returns>A string representing the directory's full path.</returns>

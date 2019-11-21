@@ -818,7 +818,7 @@ namespace Leoxia.Implementations.IO
         ///         class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
         ///         version="1" Unrestricted="true" />
         /// </PermissionSet>
-        public IDirectoryInfo Parent => _directoryInfo.Parent.Adapt();
+        public IDirectoryInfo Parent => _directoryInfo.Parent?.Adapt();
 
         /// <summary>Refreshes the state of the object.</summary>
         /// <exception cref="T:System.IO.IOException">A device such as a disk drive is not ready. </exception>
