@@ -1,22 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
-    <Company>Leoxia Ltd</Company>
+    <TargetFrameworks>netstandard1.5;net45</TargetFrameworks>
     <Description>Implementations for System abstractions classes.
 Provides Implementations for:
   IAssembly
   IEnvironment</Description>
-    <Authors>Leoxia</Authors>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.4.1.0</Version>
     <PackageLicenseUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/images/icon.png</PackageIconUrl>
     <RepositoryUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
-    <PackageTags>testability abstractions mockability leoxia</PackageTags>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes />
     <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

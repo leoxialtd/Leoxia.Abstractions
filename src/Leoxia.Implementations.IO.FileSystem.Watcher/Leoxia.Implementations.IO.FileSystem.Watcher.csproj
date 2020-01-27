@@ -1,20 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <Company>Leoxia Ltd</Company>
-    <Authors>Leoxia</Authors>
+    <TargetFrameworks>netstandard1.3;net46</TargetFrameworks>
     <Product>Lx</Product>
     <Description>Implementations for IO Abstractions of Leoxia.Lx.IO.Abstractions</Description>
-    <Version>1.4.1.0</Version>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/images/icon.png</PackageIconUrl>
     <RepositoryUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
-    <PackageReleaseNotes />
-    <PackageTags>testability abstractions mockability leoxia</PackageTags>
     <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

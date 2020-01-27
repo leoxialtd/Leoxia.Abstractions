@@ -193,7 +193,7 @@ namespace Leoxia.Implementations.IO
             set => Console.InputEncoding = value;
         }
 
-#if (!NET40)
+#if (!NET40 || NET45)
 
         /// <summary>
         ///     Gets a value indicating whether this instance is error redirected.

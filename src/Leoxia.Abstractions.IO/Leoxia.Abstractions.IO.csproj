@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net40</TargetFrameworks>
-    <Company>Leoxia Ltd</Company>
+    <TargetFrameworks>netstandard1.3;net40;net45</TargetFrameworks>
     <Description>Abstractions for System.IO classes.
 Provides:
   IConsole
@@ -16,17 +15,11 @@ Provides:
   IStreamWriter
   ITextReader
   ITextWriter</Description>
-    <Authors>Leoxia</Authors>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.4.1.0</Version>
     <PackageLicenseUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/images/icon.png</PackageIconUrl>
     <RepositoryUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
-    <PackageTags>testability abstractions mockability leoxia</PackageTags>
-    <PackageReleaseNotes />
     <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

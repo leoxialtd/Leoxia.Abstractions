@@ -1,23 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
-    <Company>Leoxia Ltd</Company>
+    <TargetFrameworks>netstandard1.0;net45</TargetFrameworks>
     <Description>Abstractions for System classes.
 Provides:
     IAssembly
     IEnvironment
     IShallowCloneable
     ITimeProvider</Description>
-    <Authors>Leoxia</Authors>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
-    <Version>1.4.1.0</Version>
-    <PackageReleaseNotes>
-    </PackageReleaseNotes>
     <PackageLicenseUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <RepositoryUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
-    <PackageTags>testability abstractions mockability leoxia</PackageTags>
     <PackageIconUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/images/icon.png</PackageIconUrl>
     <NeutralLanguage />
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>

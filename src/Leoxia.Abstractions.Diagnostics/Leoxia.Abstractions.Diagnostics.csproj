@@ -1,22 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFrameworks>netstandard1.0;net40</TargetFrameworks>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <Description>Abstractions for System.Diagnostics.
 Provides:
     IStopwatch
     IStopwatchFactory</Description>
-    <Authors>Leoxia</Authors>
-    <Company>Leoxia Ltd</Company>
-    <Copyright>Copyright (c) Leoxia Ltd 2011 - 2017. All Rights reserved.</Copyright>
     <PackageLicenseUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://www.leoxia.com</PackageProjectUrl>
     <PackageIconUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions/raw/master/images/icon.png</PackageIconUrl>
     <RepositoryUrl>https://gitlab.leoxia.com/leoxia/Leoxia.Abstractions</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
-    <PackageTags>testability abstractions mockability leoxia</PackageTags>
-    <PackageReleaseNotes />
-    <Version>1.4.1.0</Version>
     <PackageTagsKey>testability abstractions mockability leoxia</PackageTagsKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

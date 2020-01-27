@@ -162,7 +162,7 @@ namespace Leoxia.Abstractions.IO
         /// </value>
         Encoding InputEncoding { get; set; }
 
-#if (!NET40)
+#if (!NET40 || NET45)
 
         /// <summary>
         ///     Gets a value indicating whether this instance is error redirected.
